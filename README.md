@@ -1,8 +1,8 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Сергей Резник].
-* Наставник: [Анна Лисененкова] (https://htmlacademy.ru/profile/ankhena).
-* Сайт: [Cat Energy] (https://novize.github.io/Cat-Energy/)
+* Студент: [Сергей Резник]
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Cat Energy](https://novize.github.io/Cat-Energy/)
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
