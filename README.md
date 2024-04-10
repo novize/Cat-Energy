@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Сергей Резник]
+* Студент: [Сергей Резник](https://htmlacademy.ru/profile/id262461).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 * Сайт: [Cat Energy](https://novize.github.io/Cat-Energy/)
 ---
