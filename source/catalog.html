@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cat Energy</title>
+  <title>Cat Energy Catalog</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
@@ -54,10 +54,10 @@
       <div class="header-navigation__wrapper">
         <ul class="header-navigation__list">
           <li class="header-navigation__list-item">
-            <a class="header-navigation__list-link header-navigation__list-link--current" href="index.html">Главная</a>
+            <a class="header-navigation__list-link" href="index.html">Главная</a>
           </li>
           <li class="header-navigation__list-item">
-            <a class="header-navigation__list-link" href="catalog.html">Каталог продукции</a>
+            <a class="header-navigation__list-link header-navigation__list-link--current" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="header-navigation__list-item">
             <a class="header-navigation__list-link" href="#">Подбор программы</a>
@@ -68,125 +68,427 @@
 
   </header>
 
-  <main class="main-container">
+  <main class="main-catalog">
 
-    <section class="promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1>
-      <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="promo__image" src="placeholder.png" alt="Питание для котов" width="280" height="270">
-      <div class="action-button">
-        <a class="action-button choose-program" href="#">Подобрать программу</a>
-      </div>
+    <h1 class="main-catalog__title">Каталог продукции</h1>
+    <section class="main-catalog__product-wrapper">
+
+      <ul class="product-list">
+
+        <li class="product-list__item">
+
+          <img class="product-list__item-image" src="placeholder.png" alt="товар" width="150" height="150">
+
+          <ul class="product-list__item-props">
+
+            <li class="item-props">
+              <h2 class="main-catalog__title">Cat Energy PRO 500 г</h2>
+            </li>
+
+            <li class="item-props">
+
+              <ul class="item-props__elements">
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Масса</div>
+                  <div class="item-props__element-value">500 г</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Вкус</div>
+                  <div class="item-props__element-value">Курица</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Цена</div>
+                  <div class="item-props__element-value">700 ₽</div>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="item-props">
+              <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="product-list__item">
+
+          <img class="product-list__item-image" src="placeholder.png" alt="товар" width="150" height="150">
+
+          <ul class="product-list__item-props">
+
+            <li class="item-props">
+              <h2 class="main-catalog__title">Cat Energy PRO 1000 г</h2>
+            </li>
+
+            <li class="item-props">
+
+              <ul class="item-props__elements">
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Масса</div>
+                  <div class="item-props__element-value">1000 г</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Вкус</div>
+                  <div class="item-props__element-value">Курица</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Цена</div>
+                  <div class="item-props__element-value">1000 ₽</div>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="item-props">
+              <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="product-list__item">
+
+          <img class="product-list__item-image" src="placeholder.png" alt="товар" width="150" height="150">
+
+          <ul class="product-list__item-props">
+
+            <li class="item-props">
+              <h2 class="main-catalog__title">Cat Energy PRO 500 г</h2>
+            </li>
+
+            <li class="item-props">
+
+              <ul class="item-props__elements">
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Масса</div>
+                  <div class="item-props__element-value">500 г</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Вкус</div>
+                  <div class="item-props__element-value">Рыба</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Цена</div>
+                  <div class="item-props__element-value">700 ₽</div>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="item-props">
+              <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="product-list__item">
+
+          <img class="product-list__item-image" src="placeholder.png" alt="товар" width="150" height="150">
+
+          <ul class="product-list__item-props">
+
+            <li class="item-props">
+              <h2 class="main-catalog__title">Cat Energy PRO 1000 г</h2>
+            </li>
+
+            <li class="item-props">
+
+              <ul class="item-props__elements">
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Масса</div>
+                  <div class="item-props__element-value">1000 г</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Вкус</div>
+                  <div class="item-props__element-value">Рыба</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Цена</div>
+                  <div class="item-props__element-value">1000 ₽</div>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="item-props">
+              <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="product-list__item">
+
+          <img class="product-list__item-image" src="placeholder.png" alt="товар" width="150" height="150">
+
+          <ul class="product-list__item-props">
+
+            <li class="item-props">
+              <h2 class="main-catalog__title">Cat Energy SLIM 500 г</h2>
+            </li>
+
+            <li class="item-props">
+
+              <ul class="item-props__elements">
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Масса</div>
+                  <div class="item-props__element-value">500 г</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Вкус</div>
+                  <div class="item-props__element-value">Гречка</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Цена</div>
+                  <div class="item-props__element-value">700 ₽</div>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="item-props">
+              <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="product-list__item">
+
+          <img class="product-list__item-image" src="placeholder.png" alt="товар" width="150" height="150">
+
+          <ul class="product-list__item-props">
+
+            <li class="item-props">
+              <h2 class="main-catalog__title">Cat Energy SLIM 1000 г</h2>
+            </li>
+
+            <li class="item-props">
+
+              <ul class="item-props__elements">
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Масса</div>
+                  <div class="item-props__element-value">1000 г</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Вкус</div>
+                  <div class="item-props__element-value">Гречка</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Цена</div>
+                  <div class="item-props__element-value">700 ₽</div>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="item-props">
+              <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="product-list__item">
+
+          <img class="product-list__item-image" src="placeholder.png" alt="товар" width="150" height="150">
+
+          <ul class="product-list__item-props">
+
+            <li class="item-props">
+              <h2 class="main-catalog__title">Cat Energy SLIM 500 г</h2>
+            </li>
+
+            <li class="item-props">
+
+              <ul class="item-props__elements">
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Масса</div>
+                  <div class="item-props__element-value">500 г</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Вкус</div>
+                  <div class="item-props__element-value">Рис</div>
+                </li>
+
+                <li class="item-props__element">
+                  <div class="item-props__element-feature">Цена</div>
+                  <div class="item-props__element-value">500 ₽</div>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="item-props">
+              <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="product-list__item">
+
+          <ul class="product-list__item-props">
+
+            <li class="item-props">
+              <p class="main-catalog__title"></p>
+            </li>
+
+            <li class="item-props">
+              <p class="item-props__more-text">На самом деле вкусов гораздо больше!</p>
+            </li>
+
+            <li class="item-props">
+              <div class="action-button"><a class="action-button more-products" href="#">показать все</a></div>
+            </li>
+
+          </ul>
+
+        </li>
+      </ul>
+
     </section>
 
-    <section class="main-container__target">
-      <h2 class="visually-hidden">Определение целевой программы для кошки</h2>
+    <section class="additional-items">
 
-      <article class="target-description">
-        <div class="target-description__header">
-          <img class="target-description__image" src="placeholder.png" alt="Сидящий кот" width="50" height="53">
-          <h3 class="target-description__title">Похудение</h3>
-        </div>
-        <p class="target-description__text">
-          Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-        </p>
-        <a class="target-catalog-link" href="#">Каталог slim</a>
-      </article>
+      <h2 class="main-catalog__title">Дополнительные товары</h2>
 
-      <article class="target-description">
-        <div class="target-description__header">
-          <img class="target-description__image" src="placeholder.png" alt="Бегущий кот" width="67" height="50">
-          <h3 class="target-description__title">Набор массы</h3>
+      <div class="additional-wrapper">
+
+        <ul class="additional-list">
+
+          <li class="additional-list__items">
+            <ul class="additional-list__item">
+              <li class="additional-list__item">
+                <h3 class="main-catalog__title main-catalog__title--additional">Сахарозаменитель</h3>
+              </li>
+              <li class="additional-list__item">
+                <div class="additional-list__item-element-feature">1 упаковка (100 г)</div>
+                <div class="additional-list__item-element-value">200 ₽</div>
+              </li>
+              <li class="additional-list__items">
+                <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="additional-list__items">
+            <ul class="additional-list__item">
+              <li class="additional-list__item">
+                <h3 class="main-catalog__title main-catalog__title--additional">Питьевая вода</h3>
+              </li>
+              <li class="additional-list__item">
+                <div class="additional-list__item-element-feature">5 литров</div>
+                <div class="additional-list__item-element-value">50 ₽</div>
+              </li>
+              <li class="additional-list__items">
+                <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="additional-list__items">
+            <ul class="additional-list__item">
+              <li class="additional-list__item">
+                <h3 class="main-catalog__title main-catalog__title--additional">Молоко</h3>
+              </li>
+              <li class="additional-list__item">
+                <div class="additional-list__item-element-feature">1 литр</div>
+                <div class="additional-list__item-element-value">100 ₽</div>
+              </li>
+              <li class="additional-list__items">
+                <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="additional-list__items">
+            <ul class="additional-list__item">
+              <li class="additional-list__item">
+                <h3 class="main-catalog__title main-catalog__title--additional">Витамины</h3>
+              </li>
+              <li class="additional-list__item">
+                <div class="additional-list__item-element-feature">1 упаковка (30 г)</div>
+                <div class="additional-list__item-element-value">300 ₽</div>
+              </li>
+              <li class="additional-list__items">
+                <div class="action-button"><a class="action-button order" href="#">Заказать</a></div>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <div class="additional-promo">
+          <svg width="78" height="81" viewBox="0 0 78 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M64.0156 35.6325H14.031C12.2766 35.6325 10.8494 34.2144 10.8494 32.4709V22.9989C10.8494 21.2554 12.2766 19.8367 14.031 19.8367H64.0149C65.7687 19.8367 67.1953 21.2554 67.1953 22.9989V32.4715C67.1959 34.2144 65.7693 35.6325 64.0156 35.6325ZM14.031 22.2598C13.6276 22.2598 13.2869 22.5984 13.2869 22.9989V32.4715C13.2869 32.8786 13.6208 33.21 14.031 33.21H64.0149C64.4244 33.21 64.7578 32.8786 64.7578 32.4715V22.9989C64.7578 22.5978 64.4171 22.2598 64.0149 22.2598H14.031Z" fill="white" />
+            <path d="M57.0447 68.0821H20.999C17.6218 68.0821 14.8741 65.3512 14.8741 61.9933V34.421C14.8741 33.7523 15.4201 33.2095 16.0929 33.2095C16.7656 33.2095 17.3116 33.7523 17.3116 34.421V61.9933C17.3116 64.0148 18.9661 65.6589 20.999 65.6589H57.0447C59.077 65.6589 60.7308 64.0148 60.7308 61.9933V34.421C60.7308 33.7523 61.2768 33.2095 61.9496 33.2095C62.6223 33.2095 63.1683 33.7523 63.1683 34.421V61.9933C63.1683 65.3512 60.4213 68.0821 57.0447 68.0821Z" fill="white" />
+            <path d="M39.0225 68.0821C38.3498 68.0821 37.8038 67.5399 37.8038 66.8705V34.421C37.8038 33.7523 38.3498 33.2095 39.0225 33.2095C39.6953 33.2095 40.2413 33.7523 40.2413 34.421V66.8699C40.2413 67.5399 39.6959 68.0821 39.0225 68.0821Z" fill="white" />
+            <path d="M23.8113 22.2556C19.9966 20.2008 18.5731 15.4442 20.6383 11.6513C22.7022 7.86033 27.4864 6.44461 31.303 8.4958C37.117 11.6265 40.2565 20.3607 40.3869 20.7308L38.0877 21.5347C38.0585 21.4523 35.1256 13.31 30.1433 10.627C27.5078 9.21063 24.2062 10.1884 22.7821 12.8047C21.3567 15.4236 22.339 18.7069 24.9734 20.1251L23.8113 22.2556Z" fill="white" />
+            <path d="M54.2313 22.2556L53.071 20.1244C54.3477 19.4369 55.2782 18.2974 55.6926 16.9156C56.1063 15.5332 55.9534 14.0732 55.2617 12.8053C54.5719 11.5362 53.4263 10.6118 52.0363 10.2005C50.6457 9.78913 49.1783 9.94058 47.9023 10.6269C42.9201 13.3093 39.9871 21.4517 39.9579 21.5341L37.6587 20.7302C37.7891 20.3601 40.928 11.6259 46.7421 8.49578C48.5897 7.50109 50.7182 7.28179 52.7316 7.87788C54.7468 8.47337 56.4061 9.81397 57.4061 11.6513C58.4073 13.4881 58.6285 15.6029 58.0289 17.6062C57.4287 19.6089 56.0801 21.2597 54.2313 22.2556Z" fill="white" />
+            <path d="M61.9496 51.8567H16.0929C15.4201 51.8567 14.8741 51.3142 14.8741 50.6456C14.8741 49.9771 15.4201 49.4346 16.0929 49.4346H61.9496C62.6223 49.4346 63.1683 49.9771 63.1683 50.6456C63.1683 51.3142 62.6229 51.8567 61.9496 51.8567Z" fill="white" />
+          </svg>
+          <p class="additional-promo__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
-        <p class="target-description__text">
-          Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-        </p>
-        <a class="target-catalog-link" href="#">Каталог pro</a>
-      </article>
+
+      </div>
 
     </section>
 
-    <section class="main-container__effect">
-      <h2 class="main-container__title">Как это работает</h2>
-
-      <div class="effect">
-        <svg class="effect__image" width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <desc>Icon leaf</desc>
-          <defs></defs>
-          <path d="M23.84 0.76C23.74 0.31 23.36 0 22.93 0C22.93 0 22.92 0 22.92 0C17.98 0.03 5.98 0.91 1.13 8.38C-1.39 12.25 -1.61 17.29 0.48 23.34C0.5 23.39 0.53 23.42 0.55 23.46C-0.19 25.43 -0.48 26.75 -0.49 26.79C-0.6 27.33 -0.27 27.86 0.23 27.97C0.3 27.99 0.36 28 0.43 28C0.86 28 1.25 27.67 1.34 27.21C1.36 27.1 3.75 16.83 12.2 10.83C12.63 10.52 12.75 9.9 12.46 9.44C12.17 8.98 11.59 8.85 11.16 9.16C6.37 12.57 3.42 17.17 1.68 20.82C0.44 16.24 0.77 12.44 2.67 9.51C6.41 3.75 15.29 2.36 20.65 2.07C19.5 3.87 18.24 7.17 18.24 13C18.24 16.12 17.41 18.52 15.78 20.14C13.15 22.73 8.9 22.97 5.78 22.72C5.26 22.67 4.82 23.09 4.78 23.64C4.74 24.19 5.12 24.67 5.64 24.71C6.26 24.76 6.93 24.8 7.62 24.8C10.79 24.8 14.49 24.13 17.05 21.6C19.08 19.59 20.12 16.7 20.12 13C20.12 3.9 23.33 1.9 23.35 1.89C23.74 1.68 23.94 1.21 23.84 0.76Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-        </svg>
-        <p class="effect__text">Функциональное питание содержит только полезные питательные вещества.</p>
-      </div>
-
-      <div class="effect">
-        <svg class="effect__effect-image" width="26" height="29" viewBox="0 0 26 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <desc>Icon liquid</desc>
-          <defs></defs>
-          <path d="M10.37 0C8.74 0 7.47 1.35 7.47 3.08C7.47 4.8 8.74 6.16 10.37 6.16C12 6.16 13.27 4.8 13.27 3.08C13.27 1.35 12 0 10.37 0ZM10.37 1.17C11.37 1.17 12.09 2.02 12.09 3.08C12.09 4.07 11.3 4.98 10.37 4.98C9.37 4.98 8.65 4.14 8.65 3.08C8.65 2.08 9.43 1.17 10.37 1.17ZM-0.5 24.74C-0.5 25.91 -0.1 26.91 0.85 27.73C1.85 28.58 3.03 28.51 3.03 28.51L22.06 28.51C22.84 28.51 23.87 28.13 24.69 27.06C25.53 26.06 25.48 24.7 25.48 24.7L25.48 7.48C25.48 7.05 25.37 6.88 24.73 6.88C24.1 6.88 24.05 7.15 24.05 7.47L24.05 24.69C24.03 24.99 23.97 25.78 23.3 26.41C22.57 27.04 21.85 26.96 21.85 26.96C21.85 26.96 3.73 26.96 2.82 26.93C2.48 26.87 1.91 26.74 1.37 26.02C0.86 25.3 0.96 24.39 0.96 24.39L0.96 7.17C0.96 6.71 0.73 6.54 0.24 6.54C-0.25 6.54 -0.5 6.71 -0.5 7.12L-0.5 24.74ZM15.81 8.42C14.72 8.66 13.63 8.8 11.55 10.78C9.46 12.77 7.92 12.68 6.38 12.59C4.84 12.5 3.21 11.05 2.94 10.69C2.6 10.34 2.03 10.57 1.85 10.81C1.7 11.04 1.7 11.45 1.96 11.8C3.23 12.98 4.41 13.89 6.67 14.07C8.94 14.29 11.11 13.26 12.56 11.8C14.01 10.35 14.74 10.08 15.83 9.9C18.45 9.48 19.99 10.52 20.9 11.17C21.9 12.26 22.17 11.95 22.44 11.64C22.99 10.92 22.21 10.37 21.35 9.74C19.54 8.56 17.82 8.11 15.83 8.47L15.81 8.42ZM6.75 15.58C5.57 15.58 4.66 16.58 4.66 17.85C4.66 19.12 5.57 20.11 6.75 20.11C7.92 20.11 8.83 19.12 8.83 17.85C8.83 16.58 7.92 15.58 6.75 15.58ZM18.53 16.36C16.99 16.36 15.72 17.72 15.72 19.35C15.72 20.98 16.99 22.34 18.53 22.34C20.07 22.34 21.34 20.98 21.34 19.35C21.34 17.72 20.07 16.36 18.53 16.36ZM18.53 17.81C19.32 17.81 19.98 18.51 19.98 19.35C19.98 20.21 19.32 20.89 18.53 20.89C17.73 20.89 17.08 20.2 17.08 19.35C17.08 18.49 17.73 17.81 18.53 17.81Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-        </svg>
-        <p class="effect__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-      </div>
-
-      <div class="effect">
-        <svg class="effect__image" width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <desc>Icon Eat</desc>
-          <defs></defs>
-          <rect width="25" height="30" transform="translate(-0.500000 0.000000)" fill="#FFFFFF" fill-opacity="0" />
-          <path d="M18.11 0.07C18.49 -0.08 18.92 0 19.2 0.29C20.11 1.2 21.3 3.17 22.26 6.21C23.23 9.28 24 13.5 24 19C24 19.55 23.55 20 23 20L19.5 20L19.5 29C19.5 29.55 19.05 30 18.5 30C17.94 30 17.5 29.55 17.5 29L17.5 1C17.5 0.59 17.74 0.23 18.11 0.07ZM19.5 18L21.99 18C21.9 13.18 21.2 9.48 20.35 6.81C20.08 5.93 19.78 5.17 19.5 4.51L19.5 18Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
-          <path d="M1 0C1.55 0 2 0.44 2 1L2 6.5C2 7.05 2.19 7.81 2.7 8.41C3.05 8.84 3.61 9.23 4.5 9.4L4.5 1C4.5 0.44 4.94 0 5.5 0C6.05 0 6.5 0.44 6.5 1L6.5 9.4C7.38 9.23 7.94 8.84 8.29 8.41C8.8 7.81 9 7.05 9 6.5L9 1C9 0.44 9.44 0 10 0C10.55 0 11 0.44 11 1L11 6.5C11 7.44 10.69 8.68 9.82 9.7C9.08 10.58 7.99 11.23 6.5 11.43L6.5 29C6.5 29.55 6.05 30 5.5 30C4.94 30 4.5 29.55 4.5 29L4.5 11.43C3 11.23 1.91 10.58 1.17 9.7C0.3 8.68 0 7.44 0 6.5L0 1C0 0.44 0.44 0 1 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
-        </svg>
-        <p class="effect__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-      </div>
-
-      <div class="effect">
-        <svg class="effect__image" width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <desc>Icon scale</desc>
-          <defs></defs>
-          <path d="M5.12 0C4.05 0 4.05 1.58 5.12 1.58L11.78 1.58L11.78 3.18C4.96 3.62 -0.44 9.41 -0.44 16.48C-0.44 20.49 1.31 24.11 4.07 26.55C4.55 26.97 4.61 27.72 4.18 28.18L2.64 29.74C1.89 30.42 3 31.49 3.68 30.74L5.68 28.7C6.03 28.36 6.56 28.28 6.99 28.49C8.72 29.33 10.61 29.78 12.54 29.79C14.46 29.8 16.36 29.38 18.1 28.55C18.52 28.34 19.06 28.43 19.4 28.77L21.34 30.74C22.02 31.37 23.01 30.42 22.39 29.74L20.94 28.26C20.49 27.8 20.55 27.06 21.04 26.62C22.5 25.35 23.66 23.79 24.46 22.04C25.25 20.29 25.66 18.39 25.65 16.47C25.65 9.4 20.22 3.59 13.38 3.18L13.38 1.58L20.05 1.58C21.12 1.58 21.12 0 20.05 0L5.12 0ZM1 16.47C1 9.94 6.19 4.65 12.6 4.65C19 4.65 24.2 9.94 24.2 16.47C24.2 23.01 19 28.31 12.6 28.31C6.2 28.31 1 23.01 1 16.47ZM11.79 8.37C11.79 7.28 13.46 7.28 13.46 8.37L13.46 17.01C13.46 17.23 13.37 17.45 13.21 17.61C13.05 17.76 12.83 17.85 12.6 17.85C12.39 17.85 12.19 17.77 12.03 17.62C11.88 17.47 11.8 17.27 11.79 17.06L11.79 8.37ZM6.8 10.99C7.11 10.99 7.41 10.87 7.62 10.66C7.84 10.44 7.96 10.15 7.96 9.84C7.96 9.54 7.84 9.24 7.62 9.03C7.41 8.81 7.11 8.69 6.8 8.69C6.51 8.72 6.25 8.85 6.05 9.06C5.86 9.27 5.75 9.55 5.75 9.84C5.75 10.12 5.86 10.4 6.05 10.61C6.25 10.82 6.51 10.95 6.8 10.98L6.8 10.99ZM18.4 10.99C18.71 10.99 19 10.87 19.22 10.66C19.44 10.44 19.56 10.15 19.56 9.84C19.56 9.54 19.44 9.24 19.22 9.03C19 8.81 18.71 8.69 18.4 8.69C18.11 8.72 17.84 8.85 17.65 9.06C17.45 9.27 17.35 9.55 17.35 9.84C17.35 10.12 17.45 10.4 17.65 10.61C17.84 10.82 18.11 10.95 18.4 10.98L18.4 10.99ZM7.96 23.58C7.96 25.11 5.64 25.11 5.64 23.58C5.64 22.05 7.96 22.05 7.96 23.58ZM12.6 27.02C12.77 27.04 12.93 27.02 13.08 26.97C13.24 26.92 13.38 26.84 13.5 26.73C13.62 26.62 13.71 26.49 13.78 26.34C13.84 26.2 13.88 26.04 13.88 25.88C13.88 25.72 13.84 25.56 13.78 25.41C13.71 25.27 13.62 25.14 13.5 25.03C13.38 24.92 13.24 24.84 13.08 24.79C12.93 24.74 12.77 24.72 12.6 24.73C12.32 24.76 12.05 24.89 11.85 25.11C11.66 25.32 11.55 25.59 11.55 25.88C11.55 26.16 11.66 26.44 11.85 26.65C12.05 26.86 12.32 27 12.6 27.02ZM4.49 16.64C4.5 16.8 4.48 16.96 4.43 17.11C4.38 17.26 4.3 17.4 4.19 17.52C4.08 17.64 3.95 17.74 3.8 17.8C3.65 17.87 3.49 17.9 3.33 17.9C3.17 17.9 3.01 17.87 2.86 17.8C2.71 17.74 2.58 17.64 2.47 17.52C2.36 17.4 2.28 17.26 2.23 17.11C2.17 16.96 2.16 16.8 2.17 16.64C2.2 16.35 2.33 16.09 2.55 15.9C2.76 15.71 3.04 15.6 3.33 15.6C3.62 15.6 3.9 15.71 4.11 15.9C4.32 16.09 4.46 16.35 4.49 16.64ZM21.87 17.79C22.04 17.8 22.2 17.79 22.35 17.74C22.51 17.69 22.65 17.6 22.77 17.5C22.89 17.39 22.98 17.26 23.05 17.11C23.11 16.96 23.15 16.8 23.15 16.64C23.15 16.48 23.11 16.33 23.05 16.18C22.98 16.03 22.89 15.9 22.77 15.79C22.65 15.68 22.51 15.6 22.35 15.55C22.2 15.5 22.04 15.48 21.87 15.5C21.59 15.53 21.32 15.66 21.13 15.87C20.93 16.08 20.82 16.36 20.82 16.64C20.82 16.93 20.93 17.21 21.13 17.42C21.32 17.63 21.59 17.76 21.87 17.79ZM19.56 23.59C19.56 25.11 17.23 25.11 17.23 23.58C17.23 22.05 19.56 22.05 19.56 23.58L19.56 23.59Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-        </svg>
-        <p class="effect__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-      </div>
-
-    </section>
-
-    <section class="main-container__example">
-
-      <h2 class="main-container__title">Живой пример</h2>
-
-      <div class="example">
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-
-        <div class="example__stats">
-          <div class="example__stats-block">
-            <span class="example__text example__text--count">5 кг</span>
-            <p class="example__text example__text--result">Снижение веса</p>
-          </div>
-          <div class="example__stats-block">
-            <span class="example__text example__text--count">60 дней</span>
-            <p class="example__text example__text--result">Затрачено времени</p>
-          </div>
+    <section class="promotion">
+      <h2 class="main-catalog__title">Акции и новинки</h2>
+      <p class="promotion__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <form class="promotion__form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="promotion__form-label" for="mail-area">
+          <input class="promotion__form-mail" type="email" id="mail-area" name="for-mail" pattern="кuklachev@gmail\.com" required>
+        </label>
+        <div class="action-button">
+          <button class="action-button order" type="submit">Подписаться</button>
         </div>
-
-        <p class="example__text example__text--expenses">Затраты на питание: 15 000 РУБ.</p>
-
-      </div>
-
-      <div class="slider">
-
-        <div class="slider__slide left-slide">
-          <img class="slider__image image-before" src="placeholder.png" alt="Кот до" width="140" height="140">
-        </div>
-
-        <div class="slider__slide right-slide">
-          <img class="slider__image image-after" src="placeholder.png" alt="Кот после" width="140" height="140">
-        </div>
-
-        <div class="slider__drag">
-          <div class="slider__dragcircle"></div>
-        </div>
-      </div>
-
+      </form>
     </section>
   </main>
 
@@ -228,7 +530,9 @@
       </a>
 
       <div class="page-footer__social-block">
+
         <ul class="page-footer__social-list">
+
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,6 +542,7 @@
               </svg>
             </a>
           </li>
+
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,6 +552,7 @@
               </svg>
             </a>
           </li>
+
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -256,12 +562,17 @@
               </svg>
             </a>
           </li>
+
         </ul>
+
       </div>
+
     </div>
 
     <div class="page-footer__social-academy">
+
       <ul class="page-footer__social-list social-academy">
+
         <li class="page-footer__social-item academy-item">
           <a class="page-footer__social-link  academy-link" href="#">
             <svg width="111" height="14" viewBox="0 0 111 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -271,6 +582,7 @@
             </svg>
           </a>
         </li>
+
         <li class="page-footer__social-item academy-item">
           <a class="page-footer__social-link  academy-ink" href="#">
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -280,10 +592,13 @@
             </svg>
           </a>
         </li>
+
       </ul>
 
     </div>
+
   </footer>
+
 </body>
 
 </html>
