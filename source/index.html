@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -15,8 +21,11 @@
 
     <!-- Логотип сайта -->
     <a class="logo" href="index.html">
-      <img class="logo__image" src="logo-image.svg" width="33" height="38" alt="Изображение логотипа">
-      <img class="logo__text" src="logo-text.svg" width="101" height="18" alt="Текст логотипа">
+      <picture>
+        <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+        <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="logo__image" src="images/logo-mobile-image.svg" width="190" height="38" alt="Логотип сайта">
+      </picture>
     </a>
 
     <!-- Навигация -->
@@ -50,7 +59,11 @@
     <section class="promo">
       <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="promo__image" src="placeholder.png" alt="Питание для котов" width="280" height="270">
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-promo-desctop@1x.png 1x, images/images-2x/cat-energy-promo-desctop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-energy-promo-tablet@1x.png 1x, images/images-2x/cat-energy-promo-tablet@2x.png 2x">
+        <img class="promo__image" src="images/images-1x/cat-energy-promo-mobile@1x.png" srcset="images/images-2x/cat-energy-promo-mobile@2x.png 2x" width="280" height="270" alt="Промо товар">
+      </picture>
       <a class="action-button choose-program" href="#">Подобрать программу</a>
     </section>
 
@@ -108,11 +121,17 @@
       <div class="slider">
 
         <div class="slider__slide left-slide">
-          <img class="slider__image image-before" src="placeholder.png" alt="Кот до" width="140" height="140">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-before-tablet@1x.png 1x, images/images-2x/cat-before-tablet@2x.png 2x">
+            <img class="slider__image image-before" src="images/images-1x/cat-before-mobile@1x.png" srcset="images/images-2x/cat-before-mobile@2x.png 2x" alt="Кот до" width="280" height="256">
+          </picture>
         </div>
 
         <div class="slider__slide right-slide">
-          <img class="slider__image image-after" src="placeholder.png" alt="Кот после" width="140" height="140">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-after-tablet@1x.png 1x, images/images-2x/cat-after-tablet@2x.png 2x">
+            <img class="slider__image image-after" src="images/images-1x/cat-after-mobile@1x.png" srcset="images/images-2x/cat-after-mobile@2x.png 2x" alt="Кот после" width="280" height="256">
+          </picture>
         </div>
 
         <div class="slider__drag">
@@ -136,9 +155,20 @@
       </div>
 
       <div class="page-footer__map">
-        <img class="page-footer__map-image" src="placeholder.png" alt="Карта" width="300" height="200">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-        <img class="page-footer__map-image" src="placeholder.png" alt="Указатель адреса" width="50" height="50">
+
+        <picture>
+          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/images-1x/map-desktop@1x.jpg 1x, images/images-2x/map-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/images-1x/map-tablet@1x.jpg 1x, images/images-2x/map-tablet@2x.jpg 2x">
+          <img class="page-footer__map-image" src="images/images-1x/map-mobile@1x.jpg" srcset="images/images-2x/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="362">
+        </picture>
+
+        <picture>
+          <source width="113" height="106" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/map-pin-tablet@1x.png 1x, images/images-2x/map-pin-tablet@2x.png 2x">
+          <img class="page-footer__map-image pin-map" src="images/images-1x/map-pin@1x.png" srcset="images/images-2x/map-pin@2x.png 2x" alt="Указатель адреса" width="57" height="53">
+        </picture>
+
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe> -->
+
       </div>
 
     </div>
@@ -148,39 +178,36 @@
       <h3 class="visually-hidden">Социальные сети</h3>
 
       <a class="logo" href="index.html">
-        <img class="logo__text footer-location" src="logo-text.svg" width="101" height="18" alt="Текст логотипа">
+        <img class="logo__text footer-location" src="images/logo-text.svg" width="101" height="18" alt="Текст логотипа">
       </a>
 
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="vk.svg" width="27" height="17" alt="VK">
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/icon-vk.svg" width="27" height="17" alt="VK">
+            <span class="visually-hidden">Социальная сеть Вконтакте</span>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="youtube.svg" width="24" height="19" alt="Youtube">
+        <li class="social__item">
+          <a class="social__ink" href="#">
+            <img src="images/icon-youtube.svg" width="24" height="19" alt="Youtube">
+            <span class="visually-hidden">Медиахостинг Youtube</span>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="telegram.svg" width="20" height="18" alt="Telegram">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/icon-telegram.svg" width="20" height="18" alt="Telegram">
+            <span class="visually-hidden">Мессенджер Telegram</span>
           </a>
         </li>
       </ul>
 
-      <ul class="page-footer__social-list social-academy">
-        <li class="page-footer__social-item academy-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="html-academy-text.svg" width="111" height="14" alt="HTML Academy">
-          </a>
-        </li>
-        <li class="page-footer__social-item academy-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="html-academy-icon.svg" width="27" height="34" alt="html academy icon">
-          </a>
-        </li>
-      </ul>
+      <div class="social-academy">
+        <a class="social-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="social-academy__link-text">HTML Academy</p>
+          <img class="social-academy__link-logo" src="images/academy-logo-icon.svg" width="27" height="34" alt="html academy icon">
+        </a>
+      </div>
 
     </div>
   </footer>

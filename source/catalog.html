@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <title>Cat Energy Catalog</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -15,8 +21,11 @@
 
     <!-- Логотип сайта -->
     <a class="logo" href="index.html">
-      <img class="logo__image" src="logo-image.svg" width="33" height="38" alt="Изображение логотипа">
-      <img class="logo__text" src="logo-text.svg" width="101" height="18" alt="Текст логотипа">
+      <picture>
+        <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+        <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="logo__image" src="images/logo-mobile-image.svg" width="190" height="38" alt="Логотип сайта">
+      </picture>
     </a>
 
     <!-- Навигация -->
@@ -53,11 +62,18 @@
 
         <!-- Карточка товара -->
         <li class="product-list__item">
-          <div class="product-list__image-container">
-            <img class="product-list__image" src="placeholder.png" alt="товар" width="150" height="150">
-          </div>
 
-          <h2 class="main-catalog__title">Cat Energy PRO 500&nbsp;г</h2>
+          <a class="product-list__image-link" href="#">
+            <picture>
+              <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-pro500-chicken-desktop@1x.png 1x, images/images-2x/cat-energy-pro500-chicken-desktop@2x.png 2x">
+              <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-energy-pro500-chicken-tablet@1x.png 1x, images/images-2x/cat-energy-pro500-chicken-tablet@2x.png 2x">
+              <img class="product-list__image" src="images/images-1x/cat-energy-pro500-chicken-mobile@1x.png" srcset="images/images-2x/cat-energy-pro500-chicken-mobile@2x.png 2x" alt="Cat Energy PRO 500г курица" width="68" height="86">
+            </picture>
+          </a>
+
+          <a class="product-list__title-link" href="#">
+            <h2 class="main-catalog__title">Cat Energy PRO 500&nbsp;г</h2>
+          </a>
 
           <dl class="product-list__props">
 
@@ -84,10 +100,19 @@
 
         <!-- Карточка товара -->
         <li class="product-list__item">
-          <div class="product-list__image-container">
-            <img class="product-list__image" src="placeholder.png" alt="товар" width="150" height="150">
-          </div>
-          <h2 class="main-catalog__title">Cat Energy PRO 1000&nbsp;г</h2>
+
+          <a class="product-list__image-link" href="#">
+            <picture>
+              <source width="172" height="198" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-pro1000-chicken-desktop@1x.png 1x, images/images-2x/cat-energy-pro1000-chicken-desktop@2x.png 2x">
+              <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-energy-pro1000-chicken-tablet@1x.png 1x, images/images-2x/cat-energy-pro1000-chicken-tablet@2x.png 2x">
+              <img class="product-list__image" src="images/images-1x/cat-energy-pro1000-chicken-mobile@1x.png" srcset="images/images-2x/cat-energy-pro1000-chicken-mobile@2x.png 2x" alt="Cat Energy PRO 1000г курица" width="84" height="100">
+            </picture>
+          </a>
+
+          <a class="product-list__title-link" href="#">
+            <h2 class="main-catalog__title">Cat Energy PRO 1000&nbsp;г</h2>
+          </a>
+
           <dl class="product-list__props">
 
             <div class="product-list__props-element">
@@ -112,10 +137,19 @@
 
         <!-- Карточка товара -->
         <li class="product-list__item">
-          <div class="product-list__image-container">
-            <img class="product-list__image" src="placeholder.png" alt="товар" width="150" height="150">
-          </div>
-          <h2 class="main-catalog__title">Cat Energy PRO 500 г</h2>
+
+          <a class="product-list__image-link" href="#">
+            <picture>
+              <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-pro500-fish-desktop@1x.png 1x, images/images-2x/cat-energy-pro500-fish-desktop@2x.png 2x">
+              <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-energy-pro500-fish-tablet@1x.png 1x, images/images-2x/cat-energy-pro500-fish-tablet@2x.png 2x">
+              <img class="product-list__image" src="images/images-1x/cat-energy-pro500-fish-mobile@1x.png" srcset="images/images-2x/cat-energy-pro500-fish-mobile@2x.png 2x" alt="Cat Energy PRO 500г рыба" width="68" height="78">
+            </picture>
+          </a>
+
+          <a class="product-list__title-link" href="#">
+            <h2 class="main-catalog__title">Cat Energy PRO 500 г</h2>
+          </a>
+
           <dl class="product-list__props">
 
             <div class="product-list__props-element">
@@ -140,10 +174,19 @@
 
         <!-- Карточка товара -->
         <li class="product-list__item">
-          <div class="product-list__image-container">
-            <img class="product-list__image" src="placeholder.png" alt="товар" width="150" height="150">
-          </div>
-          <h2 class="main-catalog__title">Cat Energy PRO 1000&nbsp;г</h2>
+
+          <a class="product-list__image-link" href="#">
+            <picture>
+              <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-pro1000-fish-desktop@1x.png 1x, images/images-2x/cat-energy-pro1000-fish-desktop@2x.png 2x">
+              <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-energy-pro1000-fish-tablet@1x.png 1x, images/images-2x/cat-energy-pro1000-fish-tablet@2x.png 2x">
+              <img class="product-list__image" src="images/images-1x/cat-energy-pro1000-fish-mobile@1x.png" srcset="images/images-2x/cat-energy-pro1000-fish-mobile@2x.png 2x" alt="Cat Energy PRO 1000г рыба" width="84" height="100">
+            </picture>
+          </a>
+
+          <a class="product-list__title-link" href="#">
+            <h2 class="main-catalog__title">Cat Energy PRO 1000&nbsp;г</h2>
+          </a>
+
           <dl class="product-list__props">
 
             <div class="product-list__props-element">
@@ -168,10 +211,19 @@
 
         <!-- Карточка товара -->
         <li class="product-list__item">
-          <div class="product-list__image-container">
-            <img class="product-list__image" src="placeholder.png" alt="товар" width="150" height="150">
-          </div>
-          <h2 class="main-catalog__title">Cat Energy SLIM 500&nbsp;г</h2>
+
+          <a class="product-list__image-link" href="#">
+            <picture>
+              <source width="161" height="171" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-slim500-desktop@1x.png 1x, images/images-2x/cat-energy-slim500-desktop@2x.png 2x">
+              <source width="161" height="171" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-energy-slim500-tablet@1x.png 1x, images/images-2x/cat-energy-slim500-tablet@2x.png 2x">
+              <img class="product-list__image" src="images/images-1x/cat-energy-slim500-mobile@1x.png" srcset="images/images-2x/cat-energy-slim500-tablet@2x.png 2x" alt="Cat Energy SLIM 500г гречка" width="68" height="78">
+            </picture>
+          </a>
+
+          <a class="product-list__title-link" href="#">
+            <h2 class="main-catalog__title">Cat Energy SLIM 500&nbsp;г</h2>
+          </a>
+
           <dl class="product-list__props">
 
             <div class="product-list__props-element">
@@ -196,10 +248,19 @@
 
         <!-- Карточка товара -->
         <li class="product-list__item">
-          <div class="product-list__image-container">
-            <img class="product-list__image" src="placeholder.png" alt="товар" width="150" height="150">
-          </div>
-          <h2 class="main-catalog__title">Cat Energy SLIM 1000&nbsp;г</h2>
+
+          <a class="product-list__image-link" href="#">
+            <picture>
+              <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-slim1000-desktop@1x.png 1x, images/images-2x/cat-energy-slim1000-desktop@2x.png 2x">
+              <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-energy-slim1000-tablet@1x.png 1x, images/images-2x/cat-energy-slim1000-tablet@2x.png 2x">
+              <img class="product-list__image" src="images/images-1x/cat-energy-slim1000-mobile@1x.png" srcset="images/images-2x/cat-energy-slim1000-tablet@2x.png 2x" alt="Cat Energy SLIM 1000г гречка" width="84" height="100">
+            </picture>
+          </a>
+
+          <a class="product-list__title-link" href="#">
+            <h2 class="main-catalog__title">Cat Energy SLIM 1000&nbsp;г</h2>
+          </a>
+
           <dl class="product-list__props">
 
             <div class="product-list__props-element">
@@ -224,10 +285,19 @@
 
         <!-- Карточка товара -->
         <li class="product-list__item">
-          <div class="product-list__image-container">
-            <img class="product-list__image" src="placeholder.png" alt="товар" width="150" height="150">
-          </div>
-          <h2 class="main-catalog__title">Cat Energy SLIM 500&nbsp;г</h2>
+
+          <a class="product-list__image-link" href="#">
+            <picture>
+              <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-slim500-rice-desktop@1x.png 1x, images/images-2x/cat-energy-slim500-rice-desktop@2x.png 2x">
+              <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-energy-slim500-rice-tablet@1x.png 1x, images/images-2x/cat-energy-slim500-rice-tablet@2x.png 2x">
+              <img class="product-list__image" src="images/images-1x/cat-energy-slim500-rice-mobile@1x.png" srcset="images/images-2x/cat-energy-slim500-rice-tablet@2x.png 2x" alt="Cat Energy SLIM 500г рис" width="72" height="84">
+            </picture>
+          </a>
+
+          <a class="product-list__title-link" href="#">
+            <h2 class="main-catalog__title">Cat Energy SLIM 500&nbsp;г</h2>
+          </a>
+
           <dl class="product-list__props">
 
             <div class="product-list__props-element">
@@ -334,9 +404,20 @@
       </div>
 
       <div class="page-footer__map">
-        <img class="page-footer__map-image" src="placeholder.png" alt="Карта" width="300" height="200">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-        <img class="page-footer__map-image" src="placeholder.png" alt="Указатель адреса" width="50" height="50">
+
+        <picture>
+          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/images-1x/map-desktop@1x.jpg 1x, images/images-2x/map-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/images-1x/map-tablet@1x.jpg 1x, images/images-2x/map-tablet@2x.jpg 2x">
+          <img class="page-footer__map-image" src="images/images-1x/map-mobile@1x.jpg" srcset="images/images-2x/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="362">
+        </picture>
+
+        <picture>
+          <source width="113" height="106" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/map-pin-tablet@1x.png 1x, images/images-2x/map-pin-tablet@2x.png 2x">
+          <img class="page-footer__map-image pin-map" src="images/images-1x/map-pin@1x.png" srcset="images/images-2x/map-pin@2x.png 2x" alt="Указатель адреса" width="57" height="53">
+        </picture>
+
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe> -->
+
       </div>
 
     </div>
@@ -346,39 +427,36 @@
       <h3 class="visually-hidden">Социальные сети</h3>
 
       <a class="logo" href="index.html">
-        <img class="logo__text footer-location" src="logo-text.svg" width="101" height="18" alt="Текст логотипа">
+        <img class="logo__text footer-location" src="images/logo-text.svg" width="101" height="18" alt="Текст логотипа">
       </a>
 
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="vk.svg" width="27" height="17" alt="VK">
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/icon-vk.svg" width="27" height="17" alt="VK">
+            <span class="visually-hidden">Социальная сеть Вконтакте</span>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="youtube.svg" width="24" height="19" alt="Youtube">
+        <li class="social__item">
+          <a class="social__ink" href="#">
+            <img src="images/icon-youtube.svg" width="24" height="19" alt="Youtube">
+            <span class="visually-hidden">Медиахостинг Youtube</span>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="telegram.svg" width="20" height="18" alt="Telegram">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/icon-telegram.svg" width="20" height="18" alt="Telegram">
+            <span class="visually-hidden">Мессенджер Telegram</span>
           </a>
         </li>
       </ul>
 
-      <ul class="page-footer__social-list social-academy">
-        <li class="page-footer__social-item academy-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="html-academy-text.svg" width="111" height="14" alt="HTML Academy">
-          </a>
-        </li>
-        <li class="page-footer__social-item academy-item">
-          <a class="page-footer__social-link" href="#">
-            <img src="html-academy-icon.svg" width="27" height="34" alt="html academy icon">
-          </a>
-        </li>
-      </ul>
+      <div class="social-academy">
+        <a class="social-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="social-academy__link-text">HTML Academy</p>
+          <img class="social-academy__link-logo" src="images/academy-logo-icon.svg" width="27" height="34" alt="html academy icon">
+        </a>
+      </div>
 
     </div>
   </footer>
