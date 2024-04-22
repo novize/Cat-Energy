@@ -1,7 +1,28 @@
-/* GLOBAL */
+/* COMMON */
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
-/* BLOCKS */
-@import "./blocks/header.scss";
+/* BLOCKS HEADER */
+@import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/logo.scss";
+
+/* BLOCKS INDEX MAIN */
+@import "./blocks/promo.scss";
+@import "./blocks/target.scss";
+@import "./blocks/effect.scss";
+@import "./blocks/example.scss";
+@import "./blocks/slider.scss";
+
+/* BLOCKS CATALOG MAIN */
+@import "./blocks/main-catalog.scss";
+@import "./blocks/product-list.scss";
+@import "./blocks/additional-items.scss";
+@import "./blocks/additional-list.scss";
+@import "./blocks/promotion.scss";
+
+/* BLOCKS FOOTER */
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/social-academy.scss";
