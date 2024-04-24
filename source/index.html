@@ -17,7 +17,7 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="header">
 
     <!-- Логотип сайта -->
     <a class="logo" href="index.html">
@@ -29,42 +29,42 @@
     </a>
 
     <!-- Навигация -->
-    <nav class="header-navigation">
+    <nav class="navigation">
 
-      <button class="header-navigation__toggle" type="button">
+      <button class="navigation__toggle" type="button">
         <span class="visually-hidden">
           <span aria-hidden="false">Открыть меню</span>
           <span aria-hidden="true">Закрыть меню</span>
         </span>
       </button>
 
-      <ul class="header-navigation__list">
-        <li class="header-navigation__list-item">
-          <a class="header-navigation__list-link header-navigation__list-link--current" href="index.html">Главная</a>
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a class="navigation__list-link navigation__list-link--current" href="index.html">Главная</a>
         </li>
-        <li class="header-navigation__list-item">
-          <a class="header-navigation__list-link" href="catalog.html">Каталог продукции</a>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="header-navigation__list-item">
-          <a class="header-navigation__list-link" href="#">Подбор программы</a>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
 
   </header>
 
-  <main class="main-container">
+  <main class="main-index">
 
     <!-- Промо -->
     <section class="promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1>
+      <h1 class="title title-promo">Функциональное питание для котов</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
       <picture>
         <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-promo-desctop@1x.png 1x, images/images-2x/cat-energy-promo-desctop@2x.png 2x">
         <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/cat-energy-promo-tablet@1x.png 1x, images/images-2x/cat-energy-promo-tablet@2x.png 2x">
         <img class="promo__image" src="images/images-1x/cat-energy-promo-mobile@1x.png" srcset="images/images-2x/cat-energy-promo-mobile@2x.png 2x" width="280" height="270" alt="Промо товар">
       </picture>
-      <a class="action-button choose-program" href="#">Подобрать программу</a>
+      <a class="button button-choose-program" href="#">Подобрать программу</a>
     </section>
 
     <!-- Цели -->
@@ -72,19 +72,19 @@
       <h2 class="visually-hidden">Определение целевой программы для кошки</h2>
 
       <article class="target-description">
-        <h3 class="target-description__title">Похудение</h3>
+        <h3 class="title title-target-description">Похудение</h3>
         <p class="target-description__text">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
         </p>
-        <a class="action-button catalog-link" href="#">Каталог slim</a>
+        <a class="button button-catalog" href="#">Каталог slim</a>
       </article>
 
       <article class="target-description">
-        <h3 class="target-description__title">Набор массы</h3>
+        <h3 class="title title-target-description">Набор массы</h3>
         <p class="target-description__text">
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
         </p>
-        <a class="action-button catalog-link" href="#">Каталог pro</a>
+        <a class="button button-catalog" href="#">Каталог pro</a>
       </article>
 
     </section>
@@ -92,7 +92,7 @@
     <!-- Достигнутый эффект -->
     <section class="effect">
 
-      <h2 class="main-container__title">Как это работает</h2>
+      <h2 class="title title-effect">Как это работает</h2>
       <p class="effect__text">Функциональное питание содержит только полезные питательные вещества.</p>
       <p class="effect__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
       <p class="effect__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
@@ -102,7 +102,7 @@
 
     <!-- Живой пример -->
     <section class="example">
-      <h2 class="main-container__title">Живой пример</h2>
+      <h2 class="title title-example">Живой пример</h2>
 
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
@@ -142,29 +142,24 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="footer">
     <h2 class="visually-hidden">Социальные сети и контакты</h2>
 
     <!-- Контакты -->
-    <div class="page-footer__address-wraper">
+    <div class="footer__address-wrapper">
       <h3 class="visually-hidden">Контакты</h3>
 
-      <div class="page-footer__contacts">
-        <p class="page-footer__contacts-text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="page-footer__contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="footer__contacts">
+        <p class="footer__contacts-text">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="footer__contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
 
-      <div class="page-footer__map">
+      <div class="footer__map">
 
         <picture>
           <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/images-1x/map-desktop@1x.jpg 1x, images/images-2x/map-desktop@2x.jpg 2x">
           <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/images-1x/map-tablet@1x.jpg 1x, images/images-2x/map-tablet@2x.jpg 2x">
-          <img class="page-footer__map-image" src="images/images-1x/map-mobile@1x.jpg" srcset="images/images-2x/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="362">
-        </picture>
-
-        <picture>
-          <source width="113" height="106" type="image/png" media="(min-width: 768px)" srcset="images/images-1x/map-pin-tablet@1x.png 1x, images/images-2x/map-pin-tablet@2x.png 2x">
-          <img class="page-footer__map-image pin-map" src="images/images-1x/map-pin@1x.png" srcset="images/images-2x/map-pin@2x.png 2x" alt="Указатель адреса" width="57" height="53">
+          <img class="footer__map-image" src="images/images-1x/map-mobile@1x.jpg" srcset="images/images-2x/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="362">
         </picture>
 
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor"></iframe>
@@ -174,7 +169,7 @@
     </div>
 
     <!-- Социальные сети -->
-    <div class="page-footer__social-wraper">
+    <div class="footer__social-wrapper">
       <h3 class="visually-hidden">Социальные сети</h3>
 
       <a class="logo" href="index.html">
