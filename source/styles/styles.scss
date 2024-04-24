@@ -5,10 +5,14 @@
 
 /* BLOCKS HEADER */
 @import "./blocks/page.scss";
-@import "./blocks/page-header.scss";
+@import "./blocks/header.scss";
+@import "./blocks/title.scss";
 @import "./blocks/logo.scss";
+@import "./blocks/navigation.scss";
+
 
 /* BLOCKS INDEX MAIN */
+@import "./blocks/main-index.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/target.scss";
 @import "./blocks/effect.scss";
@@ -17,12 +21,13 @@
 
 /* BLOCKS CATALOG MAIN */
 @import "./blocks/main-catalog.scss";
-@import "./blocks/product-list.scss";
+@import "./blocks/products.scss";
+@import "./blocks/product.scss";
 @import "./blocks/additional-items.scss";
 @import "./blocks/additional-list.scss";
 @import "./blocks/promotion.scss";
 
 /* BLOCKS FOOTER */
-@import "./blocks/page-footer.scss";
+@import "./blocks/footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/social-academy.scss";
