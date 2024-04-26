@@ -1,0 +1,12 @@
+.header-site {
+  display: flex;
+  background-color: #ffffff;
+  padding: 0;
+
+  &__header-mobile {
+    padding: 13px 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,17 @@
+.promo {
+  display: block;
+  position: relative;
+  background-image: url("../../images/images-1x/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 320px;
+  min-height: 302px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
