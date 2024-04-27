@@ -1,12 +1,14 @@
 /* COMMON */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS HEADER */
-@import "./blocks/page.scss";
-@import "./blocks/header.scss";
+@import "./blocks/nav-control.scss";
+@import "./blocks/button.scss";
 @import "./blocks/title.scss";
+@import "./blocks/header-site.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/navigation.scss";
 
@@ -23,7 +25,7 @@
 @import "./blocks/main-catalog.scss";
 @import "./blocks/products.scss";
 @import "./blocks/product.scss";
-@import "./blocks/additional-items.scss";
+@import "./blocks/additional.scss";
 @import "./blocks/additional-list.scss";
 @import "./blocks/promotion.scss";
 

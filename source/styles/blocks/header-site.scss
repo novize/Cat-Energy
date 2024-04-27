@@ -1,0 +1,20 @@
+.header-site {
+  display: flex;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width: 100%;
+
+  &--mobile {
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 13px 20px;
+  }
+
+  &__mobile-helper {
+    display: flex;
+    flex-wrap: nowrap;
+    place-content: center space-between;
+    box-sizing: border-box;
+    align-items: center;
+  }
+}
