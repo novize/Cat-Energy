@@ -17,26 +17,28 @@
 
 <body>
 
-  <header class="header-site header-site__header-mobile">
+  <header class="header-site header-site--mobile">
+    <div class="header-site__mobile-helper">
 
-    <!-- Логотип сайта -->
-    <a class="logo" href="index.html">
-      <picture>
-        <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-        <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-        <img class="logo__image" src="images/logo-mobile-image.svg" width="190" height="38" alt="Логотип сайта">
-      </picture>
-    </a>
+      <!-- Логотип сайта -->
+      <a class="logo" href="index.html">
+        <picture>
+          <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img class="logo__image" src="images/logo-mobile-image.svg" width="190" height="38" alt="Логотип сайта">
+        </picture>
+      </a>
 
-    <!-- Навигация -->
-    <nav class="navigation">
-
-      <button class="navigation__toggle navigation__toggle--nav-close" type="button">
+      <!-- Навигация -->
+      <button class="nav-control nav-control--close" type="button">
         <span class="visually-hidden">
           <span aria-hidden="false">Открыть меню</span>
           <span aria-hidden="true">Закрыть меню</span>
         </span>
       </button>
+    </div>
+
+    <nav class="navigation">
 
       <ul class="navigation__list navigation__list--hidden">
         <li class="navigation__list-item">

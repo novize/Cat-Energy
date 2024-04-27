@@ -1,0 +1,39 @@
+.target {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.target-description {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 0 20px;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $background-basic-green;
+    top: 24px;
+    left: 20px;
+  }
+
+  &__text {
+    display: inline-block;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: $basic-font-weight;
+    line-height: 18px;
+    text-align: left;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0;
+    padding-bottom: 23px;
+    margin: 0;
+  }
+}

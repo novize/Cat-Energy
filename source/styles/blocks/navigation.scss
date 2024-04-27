@@ -1,71 +1,18 @@
 .navigation {
-  display: flex;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
   position: relative;
-
-  &__toggle {
-    display: block;
-    position: relative;
-    width: 24px;
-    height: 24px;
-    outline: 1px solid $background-basic-green;
-    border: none;
-    background-color: #ffffff;
-
-    &--nav-open {
-      position: relative;
-    }
-
-    &--nav-open::before,
-    &--nav-open::after {
-      position: absolute;
-      content: "";
-      width: 24px;
-      height: 2px;
-      top: 50%;
-      left: 50%;
-      background-color: #000000;
-    }
-
-    &--nav-open::before {
-      transform:
-        translateX(-50%)
-        rotate(135deg);
-    }
-
-    &--nav-open::after {
-      transform:
-        translateX(-50%)
-        rotate(45deg);
-    }
-
-    &--nav-close {
-      display: inline-block;
-      position: relative;
-    }
-
-    &--nav-close::before,
-    &--nav-close::after {
-      position: absolute;
-      content: "";
-      width: 24px;
-      height: 2px;
-      left: 0;
-      background-color: #000000;
-    }
-
-    &--nav-close::before {
-      top: 2px;
-    }
-
-    &--nav-close::after {
-      bottom: 2px;
-    }
-  }
 
   &__list {
     display: flex;
+    position: absolute;
+    flex-direction: column;
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    top: 13px;
+    width: inherit;
   }
 
   &__list--hidden {
@@ -74,16 +21,24 @@
   }
 
   &__list-item {
-    display: block;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    justify-content: space-around;
+    border-top: 1px solid rgb(230, 230, 230);
+    background-color: #ffffff;
   }
 
   &__list-link {
     display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: $secondary-font;
     font-weight: $basic-font-weight;
     font-size: 20px;
     text-transform: uppercase;
-    color: #000000;
+    color: $third-text-color;
     text-decoration: none;
   }
 }

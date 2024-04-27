@@ -17,26 +17,27 @@
 
 <body>
 
-  <header class="header-site header-site__header-mobile">
+  <header class="header-site header-site--mobile">
+    <div class="header-site__mobile-helper">
 
-    <!-- Логотип сайта -->
-    <a class="logo" href="index.html">
-      <picture>
-        <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-        <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-        <img class="logo__image" src="images/logo-mobile-image.svg" width="190" height="38" alt="Логотип сайта">
-      </picture>
-    </a>
+      <!-- Логотип сайта -->
+      <a class="logo" href="index.html">
+        <picture>
+          <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img class="logo__image" src="images/logo-mobile-image.svg" width="190" height="38" alt="Логотип сайта">
+        </picture>
+      </a>
 
-    <!-- Навигация -->
-    <nav class="navigation">
-
-      <button class="navigation__toggle navigation__toggle--nav-open" type="button">
+      <!-- Навигация -->
+      <button class="nav-control nav-control--open" type="button">
         <span class="visually-hidden">
           <span aria-hidden="false">Открыть меню</span>
           <span aria-hidden="true">Закрыть меню</span>
         </span>
       </button>
+    </div>
+    <nav class="navigation">
 
       <ul class="navigation__list navigation__list--hidden">
         <li class="navigation__list-item">
@@ -57,7 +58,7 @@
 
     <!-- Промо -->
     <section class="promo">
-      <h1 class="title title-promo">Функциональное питание для котов</h1>
+      <h1 class="title title-promo">Функциональное<br> питание для котов</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
       <picture>
         <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/images-1x/cat-energy-promo-desctop@1x.png 1x, images/images-2x/cat-energy-promo-desctop@2x.png 2x">

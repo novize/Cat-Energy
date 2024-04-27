@@ -12,8 +12,12 @@ body {
   background-color: #ffffff;
   padding: 0;
   margin: 0 auto;
-  color: $primari-text-color;
+  color: $primary-text-color;
   font-style: normal;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .visually-hidden {

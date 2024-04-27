@@ -5,9 +5,10 @@
 @import "./common/global.scss";
 
 /* BLOCKS HEADER */
+@import "./blocks/nav-control.scss";
 @import "./blocks/button.scss";
-@import "./blocks/header-site.scss";
 @import "./blocks/title.scss";
+@import "./blocks/header-site.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/navigation.scss";
 
