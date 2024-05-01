@@ -108,15 +108,17 @@
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
       <div class="example__stats">
-        <div class="example__stats-block">
-          <p class="example__text example__text--result">Снижение веса</p>
-          <p class="example__text example__text--count">5 кг</p>
+        <div class="example__stats-container">
+          <div class="example__stats-block">
+            <p class="example__text example__text--result">Снижение веса</p>
+            <p class="example__text example__text--count">5 кг</p>
+          </div>
+          <div class="example__stats-block">
+            <p class="example__text example__text--result">Затрачено времени</p>
+            <p class="example__text example__text--count">60 дней</p>
+          </div>
         </div>
-        <div class="example__stats-block">
-          <p class="example__text example__text--result">Затрачено времени</p>
-          <p class="example__text example__text--count">60 дней</p>
-        </div>
-        <p class="example__text example__text--expenses">Затраты на питание: 15 000 РУБ.</p>
+        <p class="example__text example__text--expenses">Затраты на питание: <span>15 000 РУБ.</span></p>
       </div>
 
       <div class="slider">
@@ -151,8 +153,8 @@
       <h3 class="visually-hidden">Контакты</h3>
 
       <div class="footer__contacts">
-        <p class="footer__contacts-text">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="footer__contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <p class="footer__contacts-text">Приглашаем<br> к&nbsp;сотрудничеству дилеров!</p>
+        <address class="footer__contacts-address">ул. Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</address>
       </div>
 
       <div class="footer__map">
@@ -163,7 +165,7 @@
           <img class="footer__map-image" src="images/images-1x/map-mobile@1x.jpg" srcset="images/images-2x/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="362">
         </picture>
 
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor"></iframe>
+        <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor"></iframe>
 
       </div>
 
@@ -173,7 +175,7 @@
     <div class="footer__social-wrapper">
       <h3 class="visually-hidden">Социальные сети</h3>
 
-      <a class="logo" href="index.html">
+      <a class="logo footer-location" href="index.html">
         <img class="logo__text footer-location" src="images/logo-text.svg" width="101" height="18" alt="Текст логотипа">
       </a>
 
@@ -198,12 +200,10 @@
         </li>
       </ul>
 
-      <div class="social-academy">
-        <a class="social-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="social-academy__link-text">HTML Academy</p>
-          <img class="social-academy__link-logo" src="images/academy-logo-icon.svg" width="27" height="34" alt="html academy icon">
-        </a>
-      </div>
+      <a class="social-academy" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="social-academy__link-text">HTML Academy</p>
+        <img class="social-academy__link-logo" src="images/academy-logo-icon.svg" width="27" height="34" alt="html academy icon">
+      </a>
 
     </div>
   </footer>
