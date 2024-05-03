@@ -33,13 +33,18 @@
     justify-content: space-between;
     width: 100%;
     min-width: 280px;
+    margin: 0;
+    padding: 0;
   }
 
   &__stats-block {
     display: flex;
+    width: 122px;
     position: relative;
+    text-transform: uppercase;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #cdcdcd;
   }
 
   &__text--count {
@@ -52,18 +57,15 @@
     font-size: 24px;
     font-weight: $basic-font-weight;
     line-height: 24px;
-    width: 124px;
     height: 56px;
     padding: 0;
-    margin: 0;
-    border: 1px solid #cdcdcd;
-    text-transform: uppercase;
+    margin: -3px 0 0;
     border-radius: 3px;
   }
 
   &__text--result {
     position: absolute;
-    top: 50px;
+    top: 46px;
     color: $primary-text-color;
     font-family: $primary-font;
     font-size: 12px;
@@ -85,6 +87,6 @@
     line-height: 20px;
     text-align: center;
     margin: 0 auto;
-    padding-top: 34px;
+    padding-top: 35px;
   }
 }

@@ -4,32 +4,36 @@
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 
-/* BLOCKS HEADER */
-@import "./blocks/nav-control.scss";
-@import "./blocks/button.scss";
+
+/* BLOCKS GENERAL */
 @import "./blocks/title.scss";
-@import "./blocks/header-site.scss";
 @import "./blocks/logo.scss";
-@import "./blocks/navigation.scss";
+@import "./blocks/button.scss";
+
+
+/* BLOCKS HEADER */
+@import "./blocks/header/nav-control.scss";
+@import "./blocks/header/header-site.scss";
+@import "./blocks/header/navigation.scss";
 
 
 /* BLOCKS INDEX MAIN */
-@import "./blocks/main-index.scss";
-@import "./blocks/promo.scss";
-@import "./blocks/target.scss";
-@import "./blocks/effect.scss";
-@import "./blocks/example.scss";
-@import "./blocks/slider.scss";
+@import "./blocks/main-index/main-index.scss";
+@import "./blocks/main-index/promo.scss";
+@import "./blocks/main-index/target.scss";
+@import "./blocks/main-index/effect.scss";
+@import "./blocks/main-index/example.scss";
+@import "./blocks/main-index/slider.scss";
 
 /* BLOCKS CATALOG MAIN */
-@import "./blocks/main-catalog.scss";
-@import "./blocks/products.scss";
-@import "./blocks/product.scss";
-@import "./blocks/additional.scss";
-@import "./blocks/additional-list.scss";
-@import "./blocks/promotion.scss";
+@import "./blocks/main-catalog/main-catalog.scss";
+@import "./blocks/main-catalog/products.scss";
+@import "./blocks/main-catalog/product.scss";
+@import "./blocks/main-catalog/additional.scss";
+@import "./blocks/main-catalog/additional-list.scss";
+@import "./blocks/main-catalog/promotion.scss";
 
 /* BLOCKS FOOTER */
-@import "./blocks/footer.scss";
-@import "./blocks/social.scss";
-@import "./blocks/social-academy.scss";
+@import "./blocks/footer/footer.scss";
+@import "./blocks/footer/social.scss";
+@import "./blocks/footer/social-academy.scss";

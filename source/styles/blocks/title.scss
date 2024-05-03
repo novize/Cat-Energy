@@ -16,24 +16,46 @@
 }
 
 .title-target-description {
-  position: relative;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $third-text-color;
+  font-weight: $basic-font-weight;
   margin: 0;
   padding-top: 30px;
-  padding-left: 70px;
-  padding-bottom: 29px;
+  padding-left: 38px;
+  padding-bottom: 30px;
 }
 
-.title-effect,
-.title-example {
-  position: relative;
+.title-effect {
   font-size: 36px;
   line-height: 40px;
   color: $third-text-color;
+  font-weight: $basic-font-weight;
   text-align: left;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+}
+
+.title-example {
+  font-size: 36px;
+  line-height: 40px;
+  color: $third-text-color;
+  font-weight: $basic-font-weight;
+  text-align: left;
+  margin: -2px 0 20px;
+}
+
+.title-catalog {
+  color: $third-text-color;
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: $basic-font-weight;
+  line-height: 36px;
+  text-align: left;
+  padding: 27px 41px 40px 20px;
+  margin: 0;
+  margin-top: -2px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
