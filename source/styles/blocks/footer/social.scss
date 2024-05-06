@@ -17,7 +17,15 @@
 
   &__link {
     display: block;
+    position: relative;
     margin: 0;
     padding: 22px 0 16px;
+
+    &--vk {
+      position: absolute;
+      width: 27px;
+      height: 17px;
+      mask-image: url("../../icons/stack.svg#icon-vk");
+    }
   }
 }

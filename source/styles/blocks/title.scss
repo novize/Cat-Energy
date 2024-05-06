@@ -8,7 +8,6 @@
   text-align: left;
   padding: 0;
 
-
   &--promo {
     color: $secondary-text-color;
     text-align: center;
@@ -17,6 +16,7 @@
   }
 
   &--target-description {
+    position: relative;
     color: $third-text-color;
     font-size: 24px;
     line-height: 37px;
@@ -26,6 +26,31 @@
     padding-top: 30px;
     padding-left: 38px;
     padding-bottom: 30px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: " ";
+      top: 50%;
+    }
+
+    &::before {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: $background-basic-green;
+    }
+
+    &::after {
+      width: 67px;
+      height: 50px;
+      background-image: url("../../icons/stack.svg#cat-sitting-icon");
+      background-repeat: no-repeat;
+      left: -9px;
+      transform: translateY(-54%);
+    }
   }
 
   &--effect {
@@ -94,4 +119,17 @@
     padding: 40px 0 32px;
     align-self: flex-start;
   }
+}
+
+.target-description:nth-child(3) .title--target-description::after {
+  width: 67px;
+  height: 50px;
+  background-image: url("../../icons/stack.svg#cat-walking-icon");
+  background-repeat: no-repeat;
+  left: -7px;
+  transform: translateY(-50%);
+}
+
+.target-description:nth-child(2) .title--target-description {
+  padding-left: 9px;
 }
