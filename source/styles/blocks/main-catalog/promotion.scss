@@ -34,7 +34,7 @@
   }
 
   &__helper::after {
-    background-color: $background-basic-green;
+    background-color: $background-basic;
     opacity: 0.85;
   }
 
@@ -42,8 +42,7 @@
     color: $secondary-text-color;
     font-family: $primary-font;
     font-size: 16px;
-    font-weight: $basic-font-weight;
-    line-height: 20px;
+    line-height: 1.25;
     text-align: center;
     padding: 187px 58px 43px 56px;
     margin: 0;
@@ -56,8 +55,7 @@
     color: $third-text-color;
     font-family: $secondary-font;
     font-size: 16px;
-    font-weight: $basic-font-weight;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: center;
   }
 
@@ -86,8 +84,7 @@
     color: $primary-text-color;
     font-family: $secondary-font;
     font-size: 20px;
-    font-weight: $basic-font-weight;
-    line-height: 30px;
+    line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
     outline: none;

@@ -10,8 +10,7 @@
     color: $primary-text-color;
     font-family: $primary-font;
     font-size: 14px;
-    font-weight: $basic-font-weight;
-    line-height: 18px;
+    line-height: 1.29;
     text-align: left;
     margin: 0;
     padding: 20px 0;
@@ -55,8 +54,7 @@
     color: $third-text-color;
     font-family: $secondary-font;
     font-size: 24px;
-    font-weight: $basic-font-weight;
-    line-height: 24px;
+    line-height: 1;
     height: 56px;
     padding: 0;
     margin: -3px 0 0;
@@ -69,8 +67,7 @@
     color: $primary-text-color;
     font-family: $primary-font;
     font-size: 12px;
-    font-weight: $basic-font-weight;
-    line-height: 12px;
+    line-height: 1;
     width: 59px;
     margin: 0;
     padding: 0 15px;
@@ -84,7 +81,7 @@
     font-family: $secondary-font;
     font-size: 14px;
     font-weight: $basic-font-weight;
-    line-height: 20px;
+    line-height: 1.43;
     text-align: center;
     margin: 0 auto;
     padding-top: 35px;

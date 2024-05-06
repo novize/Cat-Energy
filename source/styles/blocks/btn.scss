@@ -4,11 +4,11 @@
   font-weight: $basic-font-weight;
   color: $secondary-text-color;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $background-basic-green;
+  background-color: $background-basic;
 
 
   &--choose-program {

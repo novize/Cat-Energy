@@ -11,8 +11,7 @@
     color: $primary-text-color;
     font-family: $primary-font;
     font-size: 14px;
-    font-weight: $basic-font-weight;
-    line-height: 18px;
+    line-height: 1.29;
     text-align: left;
     min-height: 60px;
     padding: 0;
@@ -33,7 +32,7 @@
   }
 
   &__text::before {
-    background-color: $background-basic-green;
+    background-color: $background-basic;
   }
 
   &__text:nth-child(2)::after {
