@@ -14,10 +14,6 @@
     width: 107px;
   }
 
-  :is(.products:nth-child(2n)) > &__image-link {
-    padding-left: 20px;
-  }
-
   &__image {
     padding: 0;
     margin: 0;
