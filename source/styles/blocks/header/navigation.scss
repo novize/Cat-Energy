@@ -5,38 +5,43 @@
   height: auto;
   position: relative;
 
+  &__list--hidden {
+    display: none;
+    //display: flex;
+  }
+
   &__list {
-    display: flex;
     position: absolute;
     flex-direction: column;
     box-sizing: border-box;
     margin: 0;
-    top: 13px;
-    width: inherit;
+    padding: 0;
+    top: 0;
+    left: 0;
   }
 
-  &__list--hidden {
-    display: none;
-    //display: block;
-  }
 
   &__list-item {
     display: flex;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     justify-content: space-around;
-    border-top: 1px solid rgb(230, 230, 230);
+    border-top: 1px solid #e6e6e6;
     background-color: #ffffff;
   }
 
   &__list-link {
     display: block;
     box-sizing: border-box;
+    width: 100%;
+    min-width: 320px;
     margin: 0;
-    padding: 0;
+    padding: 22px 0;
     font-family: $secondary-font;
     font-weight: $basic-font-weight;
     font-size: 20px;
+    text-align: center;
     text-transform: uppercase;
     color: $third-text-color;
     text-decoration: none;

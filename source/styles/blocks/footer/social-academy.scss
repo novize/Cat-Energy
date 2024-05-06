@@ -1,0 +1,22 @@
+
+.social-academy {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 100%;
+  min-width: 280px;
+  margin: 0;
+  padding: 20px 0;
+
+  &__link-text {
+    color: $primary-text-color;
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: $basic-font-weight;
+    line-height: 20px;
+    margin: 0;
+    padding: 7px 0;
+  }
+}

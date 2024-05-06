@@ -1,0 +1,92 @@
+.example {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 25px 20px 40px;
+
+  &__text {
+    color: $primary-text-color;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: $basic-font-weight;
+    line-height: 18px;
+    text-align: left;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__stats-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 280px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__stats-block {
+    display: flex;
+    width: 122px;
+    position: relative;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #cdcdcd;
+  }
+
+  &__text--count {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    order: -1;
+    color: $third-text-color;
+    font-family: $secondary-font;
+    font-size: 24px;
+    font-weight: $basic-font-weight;
+    line-height: 24px;
+    height: 56px;
+    padding: 0;
+    margin: -3px 0 0;
+    border-radius: 3px;
+  }
+
+  &__text--result {
+    position: absolute;
+    top: 46px;
+    color: $primary-text-color;
+    font-family: $primary-font;
+    font-size: 12px;
+    font-weight: $basic-font-weight;
+    line-height: 12px;
+    width: 59px;
+    margin: 0;
+    padding: 0 15px;
+    text-transform: lowercase;
+    text-align: center;
+    background-color: #eaeaea;
+  }
+
+  &__text--expenses {
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: $basic-font-weight;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 35px;
+  }
+}

@@ -7,7 +7,6 @@
   &--mobile {
     flex-direction: column;
     box-sizing: border-box;
-    padding: 13px 20px;
   }
 
   &__mobile-helper {
@@ -16,5 +15,6 @@
     place-content: center space-between;
     box-sizing: border-box;
     align-items: center;
+    padding: 13px 20px 10px;
   }
 }
