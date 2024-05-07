@@ -8,8 +8,7 @@
     font-family: $secondary-font;
     font-size: 14px;
     line-height: 1;
-    padding: 0;
-    padding-right: 3px;
+    padding: 0 3px 0 0;
     margin: 0;
     color: $secondary-text-color;
     text-transform: uppercase;
@@ -22,8 +21,8 @@
     padding-bottom: 4px;
   }
 
-  ::before,
-  ::after {
+  &::before,
+  &::after {
     position: absolute;
     content: "";
     top: 0;
@@ -33,7 +32,7 @@
     z-index: -1;
   }
 
-  ::before {
+  &::before {
     top: 64px;
     background-image: url("../../images/background-images/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -42,7 +41,7 @@
     max-height: 302px;
   }
 
-  ::after {
+  &::after {
     max-height: 366px;
     background-color: $background-basic;
     opacity: 0.85;
