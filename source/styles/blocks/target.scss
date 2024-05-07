@@ -4,16 +4,17 @@
   gap: 20px;
   padding: 20px;
   background-color: #ffffff;
-}
 
-.target-description {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: #f2f2f2;
-  padding: 0 20px;
 
-  &__text {
+  &__description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #f2f2f2;
+    padding: 0 20px;
+  }
+
+  &__description--text {
     display: inline-block;
     font-family: $primary-font;
     font-size: 14px;

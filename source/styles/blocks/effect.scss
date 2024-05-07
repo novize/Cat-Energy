@@ -29,7 +29,7 @@
   }
 
   &__text::before {
-    background-color: $background-basic;
+    background-color: $accent-color;
   }
 
   &__text:nth-child(2)::after {
