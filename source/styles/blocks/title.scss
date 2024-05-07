@@ -67,8 +67,8 @@
 
 .title--catalog {
   color: $third-text-color;
-  padding: 27px 41px 40px 20px;
-  margin: -2px 0 0;
+  padding: 27px 41px 39px 20px;
+  margin: 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -76,7 +76,7 @@
 .title--product {
   color: #222222;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.2;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -85,7 +85,7 @@
 .title--more {
   color: #111111;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -96,8 +96,8 @@
   color: $third-text-color;
   font-size: 24px;
   line-height: 1;
-  margin: 0;
-  padding: 24px 0 35px 20px;
+  margin: 0 20px;
+  padding: 25px 0 35px;
   border-bottom: 1px solid #cdcdcd;
 }
 

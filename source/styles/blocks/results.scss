@@ -24,13 +24,6 @@
     z-index: 1;
   }
 
-  &__image {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    vertical-align: center;
-  }
-
   &__drag-bar {
     display: block;
     width: 100%;
@@ -41,5 +34,11 @@
     margin: 0;
     padding: 0;
   }
-}
 
+  &__image {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+  }
+}
