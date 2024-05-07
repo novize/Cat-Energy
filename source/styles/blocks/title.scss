@@ -4,7 +4,7 @@
   font-weight: $basic-font-weight;
   color: $primary-text-color;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   text-align: left;
   padding: 0;
 
@@ -78,7 +78,7 @@
   &--product {
     color: #222222;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
@@ -87,7 +87,7 @@
   &--more {
     color: #111111;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
@@ -97,7 +97,7 @@
   &--additional {
     color: $third-text-color;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1;
     margin: 0;
     padding: 24px 0 35px 20px;
     border-bottom: 1px solid #cdcdcd;
@@ -106,7 +106,7 @@
   &--additional-list {
     color: #222222;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 1;
     text-transform: uppercase;
     margin: 0;
     padding: 14px 0 10px;
@@ -114,7 +114,7 @@
 
   &--promotion {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1;
     margin: 0;
     padding: 40px 0 32px;
     align-self: flex-start;

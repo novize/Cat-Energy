@@ -1,11 +1,11 @@
 .logo {
   display: block;
-}
 
-.footer-location {
-  width: 128px;
-  height: 24px;
-  padding: 0;
-  padding-bottom: 20px;
-  margin: 0;
+  &__logo-footer {
+    width: 128px;
+    height: 24px;
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+  }
 }
