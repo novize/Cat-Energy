@@ -1,0 +1,75 @@
+.promotion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 34px 20px 40px;
+
+  &__helper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    place-content: stretch center;
+    place-items: stretch stretch;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__promo {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+    width: 100%;
+    background-image: url("../../images/background-images/catalog-background-mobile-cat@1x.jpg");
+    grid-area: 1 / 1 / 2 / 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__promo div:first-child {
+    background-color: $accent-color;
+    opacity: 0.85;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  &__promo div:nth-child(2) {
+    width: 78px;
+    height: 81px;
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("../../icons/stack.svg#promotion-icon");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 59px 0 56px;
+    z-index: 1;
+  }
+
+  &__promo-slogan {
+    color: $secondary-text-color;
+    font-family: $primary-font;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    padding: 187px 61px 43px 58px;
+    margin: 0 auto;
+    grid-area: 1 / 1 / 2 / 2;
+    width: 161px;
+    z-index: 2;
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    color: $third-text-color;
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}

@@ -1,13 +1,9 @@
-.header-site {
+.header {
   display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   box-sizing: border-box;
   width: 100%;
-
-  &--mobile {
-    flex-direction: column;
-    box-sizing: border-box;
-  }
 
   &__mobile-helper {
     display: flex;

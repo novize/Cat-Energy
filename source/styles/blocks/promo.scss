@@ -1,0 +1,72 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+
+  &__helper {
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    grid-template-rows: repeat(3, auto);
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__helper div:first-child {
+    width: 100%;
+    background-image: url("../../images/background-images/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__helper div:nth-child(2) {
+    background-color: $accent-color;
+    opacity: 0.85;
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  &__slogan {
+    font-family: $secondary-font;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 0 164px;
+    margin: 0 auto;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    z-index: 1;
+  }
+
+  &__helper div:last-child {
+    width: 100%;
+    box-sizing: border-box;
+    margin: -135px auto 5px;
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    z-index: 2;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__button-helper {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}

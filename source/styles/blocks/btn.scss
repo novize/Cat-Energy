@@ -1,78 +1,78 @@
 .btn {
   display: block;
   font-family: $secondary-font;
-  font-weight: $basic-font-weight;
   color: $secondary-text-color;
   font-size: 16px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $background-basic;
+  background-color: $accent-color;
+}
 
+.btn--choose-program {
+  line-height: 1.2;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+  min-width: 280px;
+  box-sizing: border-box;
+}
 
-  &--choose-program {
-    margin: 0 20px;
-    padding: 11px 0;
-    width: 100%;
-    max-width: 280px;
+.btn--catalog {
+  position: relative;
+  width: 100%;
+  min-width: 280px;
+  color: $third-text-color;
+  line-height: 1;
+  padding: 19px 0 21px;
+  text-align: left;
+  background-color: #f2f2f2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../icons/stack.svg#icon-right-arrow");
+    top: 50%;
+    transform: translate(50%, -65%);
   }
+}
 
-  &--catalog {
-    position: relative;
-    color: $third-text-color;
-    padding-top: 19px;
-    padding-bottom: 20px;
-    text-align: left;
-    background-color: #f2f2f2;
+.btn--cart {
+  width: 100%;
+  min-width: 280px;
+  padding: 10px 0;
+  margin: -5px 0 24px;
+  line-height: 1.25;
+  grid-column: 1/-1;
+}
 
+.btn--more {
+  color: $primary-text-color;
+  width: 100%;
+  min-width: 280px;
+  padding: 10px 0;
+  line-height: 1.25;
+  background-color: #f2f2f2;
+}
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 32px;
-      height: 12px;
-      margin: 0;
-      padding: 0;
-      background-image: url("../../icons/stack.svg#icon-right-arrow");
-      top: 50%;
-      transform: translate(50%, -65%);
-    }
-  }
+.btn--additional {
+  width: 100%;
+  min-width: 280px;
+  padding: 10px 0;
+  line-height: 1.25;
+}
 
-  &--cart {
-    width: 100%;
-    max-width: 280px;
-    padding: 10px 0;
-    margin-top: -5px;
-    margin-bottom: 23px;
-    line-height: 20px;
-    grid-column: 1/-1;
-  }
-
-  &--more {
-    color: $primary-text-color;
-    width: 100%;
-    max-width: 280px;
-    padding: 10px 0;
-    line-height: 20px;
-    background-color: #f2f2f2;
-  }
-
-  &--additional {
-    width: 100%;
-    max-width: 280px;
-    padding: 10px 0;
-    line-height: 20px;
-  }
-
-  &--submit {
-    width: 100%;
-    max-width: 280px;
-    padding: 15px 0;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    line-height: 26px;
-  }
+.btn--submit {
+  width: 100%;
+  min-width: 280px;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  line-height: 1.3;
 }

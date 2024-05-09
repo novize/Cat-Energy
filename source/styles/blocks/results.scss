@@ -1,0 +1,44 @@
+.results {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  width: 100%;
+  max-width: 280px;
+  height: 256px;
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0 0 40px;
+  box-sizing: border-box;
+
+  &__before {
+    display: block;
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__after {
+    display: block;
+    grid-area: 1 / 2 / 2 / 1;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+  &__drag-bar {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: 256px;
+    grid-area: 2 / 1 / 1 / -1;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__image {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+  }
+}
