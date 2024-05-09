@@ -6,46 +6,60 @@
   padding: 34px 20px 40px;
 
   &__helper {
-    display: block;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    place-content: stretch center;
+    place-items: stretch stretch;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
-  &__helper::before,
-  &__helper::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
+  &__promo {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
     width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  &__helper::before {
     background-image: url("../../images/background-images/catalog-background-mobile-cat@1x.jpg");
+    grid-area: 1 / 1 / 2 / 2;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  &__helper::after {
+  &__promo div:first-child {
     background-color: $accent-color;
     opacity: 0.85;
+    grid-area: 1 / 1 / 2 / 2;
   }
 
-  &__promo {
+  &__promo div:nth-child(2) {
+    width: 78px;
+    height: 81px;
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("../../icons/stack.svg#promotion-icon");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 59px 0 56px;
+    z-index: 1;
+  }
+
+  &__promo--slogan {
     color: $secondary-text-color;
     font-family: $primary-font;
     font-size: 16px;
     line-height: 1.25;
     text-align: center;
-    padding: 187px 58px 43px 56px;
-    margin: 0;
+    padding: 187px 61px 43px 58px;
+    margin: 0 auto;
+    grid-area: 1 / 1 / 2 / 2;
+    width: 161px;
+    z-index: 2;
   }
 
   &__text {

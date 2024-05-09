@@ -12,14 +12,17 @@
 
 .btn--choose-program {
   line-height: 1.2;
-  margin: 0 20px;
+  margin: 0;
   padding: 10px 0;
   width: 100%;
-  max-width: 280px;
+  min-width: 280px;
+  box-sizing: border-box;
 }
 
 .btn--catalog {
   position: relative;
+  width: 100%;
+  min-width: 280px;
   color: $third-text-color;
   line-height: 1;
   padding: 19px 0 21px;
@@ -41,7 +44,7 @@
 
 .btn--cart {
   width: 100%;
-  max-width: 280px;
+  min-width: 280px;
   padding: 10px 0;
   margin: -5px 0 24px;
   line-height: 1.25;
@@ -51,7 +54,7 @@
 .btn--more {
   color: $primary-text-color;
   width: 100%;
-  max-width: 280px;
+  min-width: 280px;
   padding: 10px 0;
   line-height: 1.25;
   background-color: #f2f2f2;
@@ -59,14 +62,14 @@
 
 .btn--additional {
   width: 100%;
-  max-width: 280px;
+  min-width: 280px;
   padding: 10px 0;
   line-height: 1.25;
 }
 
 .btn--submit {
   width: 100%;
-  max-width: 280px;
+  min-width: 280px;
   padding: 15px 0;
   border: none;
   outline: none;
