@@ -1,8 +1,9 @@
 .results {
   display: grid;
-  grid-template-columns: repeat(3, 280px);
+  grid-template-columns: 280px;
+  justify-content: center;
   width: 100%;
-  max-width: 280px;
+  min-width: 280px;
   height: 256px;
   background-color: #eaeaea;
   margin: 0;

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  box-sizing: border-box;
   background-color: #ffffff;
 
   &__contacts {
@@ -55,6 +56,7 @@
   &__map-iframe {
     position: absolute;
     width: 100%;
+    height: 100%;
     z-index: 1;
     left: 0;
     top: 0;

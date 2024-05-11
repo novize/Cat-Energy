@@ -61,3 +61,15 @@
     bottom: 6px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .nav-control {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-control {
+    display: none;
+  }
+}

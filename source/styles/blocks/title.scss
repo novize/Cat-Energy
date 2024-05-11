@@ -171,3 +171,17 @@
 .target__description:nth-child(2) .title--target-description {
   padding-left: 9px;
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    display: block;
+  }
+
+  .title--promo {
+    color: $third-text-color;
+    font-size: 60px;
+    line-height: 1;
+    text-align: left;
+    padding: 35px 140px 40px 119px;
+  }
+}

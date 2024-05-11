@@ -7,13 +7,13 @@
 
   &__list--hidden {
     display: none;
-    //display: flex;
   }
 
   &__list {
     position: absolute;
     flex-direction: column;
     box-sizing: border-box;
+    min-width: 320px;
     margin: 0;
     padding: 0;
     top: 0;
@@ -34,7 +34,6 @@
     display: block;
     box-sizing: border-box;
     width: 100%;
-    min-width: 320px;
     margin: 0;
     padding: 22px 0;
     font-family: $secondary-font;
@@ -43,5 +42,41 @@
     text-transform: uppercase;
     color: $third-text-color;
     text-decoration: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    display: grid;
+    z-index: unset;
+
+    &__list--hidden {
+      display: block;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: 1fr;
+      justify-items: center;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    &__list-item {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      border: none;
+    }
+
+    &__list-link {
+      display: block;
+      box-sizing: border-box;
+      white-space: nowrap;
+      font-size: 18px;
+      line-height: 1.33;
+      padding: 15px 17px 14px 16px;
+    }
   }
 }
