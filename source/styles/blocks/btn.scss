@@ -90,4 +90,25 @@
     max-width: 244px;
     box-sizing: border-box;
   }
+
+  .btn--catalog {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-size: 20px;
+    width: 340px;
+    margin: 0;
+    padding: 13px 0 21px;
+
+    &::after {
+      top: 50%;
+      transform: translate(80%, -80%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn--choose-program {
+    display: grid;
+    padding: 13px 0;
+  }
 }

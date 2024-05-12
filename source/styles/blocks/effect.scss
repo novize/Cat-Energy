@@ -6,13 +6,18 @@
   padding: 0 20px 49px;
   background-color: #ffffff;
 
+  &__count {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
   &__text {
     position: relative;
     color: $primary-text-color;
     font-family: $primary-font;
     font-size: 14px;
     line-height: 1.29;
-    min-height: 60px;
     padding: 0 0 0 80px;
     margin: 20px 0 0;
   }
@@ -32,31 +37,85 @@
     background-color: $accent-color;
   }
 
-  &__text:nth-child(2)::after {
+  &__count:nth-child(2) .effect__text::after {
     width: 25px;
     height: 28px;
     transform: translate(70%, -55%);
     background-image: url("../../icons/stack.svg#leaf-icon");
   }
 
-  &__text:nth-child(3)::after {
+  &__count:nth-child(3) .effect__text::after {
     width: 26px;
     height: 29px;
     transform: translate(66%, -50%);
     background-image: url("../../icons/stack.svg#liquid-icon");
   }
 
-  &__text:nth-child(4)::after {
+  &__count:nth-child(4) .effect__text::after {
     width: 26px;
     height: 30px;
     transform: translate(66%, -50%);
     background-image: url("../../icons/stack.svg#eat-icon");
   }
 
-  &__text:nth-child(5)::after {
+  &__count:nth-child(5) .effect__text::after {
     width: 27px;
     height: 31px;
     transform: translate(66%, -50%);
     background-image: url("../../icons/stack.svg#scales-icon");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 5px 30px 0;
+    transform: translateY(-8%);
+    counter-reset: effect 0;
+
+    &__count {
+      display: flex;
+      position: relative;
+    }
+
+    &__count::before {
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 1;
+      color: #f2f2f2;
+      counter-increment: effect;
+      content: counter(effect);
+      position: absolute;
+      top: -20px;
+      left: 115px;
+    }
+
+    &__text {
+      position: relative;
+      font-family: $primary-font;
+      width: 250px;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 129px 75px 116px 0;
+      margin: 0;
+    }
+
+    &__text::before,
+    &__text::after {
+      width: 80px;
+      height: 80px;
+      top: 18%;
+    }
+
+    &__count:nth-child(2) .effect__text::after,
+    &__count:nth-child(3) .effect__text::after,
+    &__count:nth-child(4) .effect__text::after,
+    &__count:nth-child(5) .effect__text::after {
+      transform: translate(103%, -45%);
+    }
   }
 }

@@ -47,3 +47,13 @@
     mask-image: url("../../icons/stack.svg#icon-telegram");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border: none;
+    padding-left: 37px;
+  }
+}

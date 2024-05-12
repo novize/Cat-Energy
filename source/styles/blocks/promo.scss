@@ -73,17 +73,12 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    display: flex;
-    flex-direction: column;
     position: relative;
 
     &__helper {
+      display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      box-sizing: border-box;
-      width: 100%;
-      margin: 0;
-      padding: 0;
     }
 
     &__helper div:first-child,
@@ -101,12 +96,68 @@
       text-align: left;
       padding: 0 120px 156px;
       margin: 0;
+      width: 300px;
     }
 
     &__button-helper {
       margin: 0;
       padding: 0;
       transform: translate(-142px, -584px);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+
+    &__helper {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: 170px 60px 1fr;
+      box-sizing: border-box;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    &__helper div:first-child,
+    &__helper div:nth-child(2) {
+      display: block;
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
+      transform: translateY(-25%);
+    }
+
+    &__helper div:first-child {
+      background-image: url("../../images/background-images/index-background@1x.jpg");
+      height: 694px;
+    }
+
+    &__button-helper {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      padding-left: 19px;
+      transform: translate(-29%, -37px);
+    }
+
+    &__slogan {
+      padding: 41px 120px 0 189px;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      transform: translate(0);
+      z-index: 1;
+    }
+
+    &__helper div:last-child {
+      grid-column: 1/2;
+      grid-row: 1/-1;
+      z-index: 2;
+      transform: translate(66%, -4%);
+      margin: 0;
+      padding: 0;
     }
   }
 }

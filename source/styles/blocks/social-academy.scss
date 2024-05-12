@@ -5,7 +5,6 @@
   justify-content: space-between;
   text-decoration: none;
   width: 100%;
-  min-width: 280px;
   margin: 0;
   padding: 20px 0;
 
@@ -16,5 +15,23 @@
     line-height: 1.25;
     margin: 0;
     padding: 7px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-academy {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    max-width: 168px;
+
+    &__link-text {
+      margin: 0;
+      padding: 0 0 2px 5px;
+    }
+
+    &__link-logo {
+      padding: 0 0 2px 3px;
+    }
   }
 }

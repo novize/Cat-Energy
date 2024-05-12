@@ -71,12 +71,31 @@
     }
 
     &__list-link {
-      display: block;
-      box-sizing: border-box;
       white-space: nowrap;
       font-size: 18px;
       line-height: 1.33;
       padding: 15px 17px 14px 16px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    display: grid;
+
+
+    &__list {
+      justify-content: center;
+    }
+
+    &__list-link {
+      color: $secondary-text-color;
+      white-space: nowrap;
+      font-size: 20px;
+      line-height: 1.6;
+      padding-left: 16px;
+      margin: 0;
+      z-index: 1;
     }
   }
 }

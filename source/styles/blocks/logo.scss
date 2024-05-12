@@ -8,3 +8,16 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    display: block;
+
+    &__logo-footer {
+      width: 128px;
+      height: 24px;
+      padding: 3px 3px 0 0;
+      margin: 0;
+    }
+  }
+}

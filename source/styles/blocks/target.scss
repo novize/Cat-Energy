@@ -24,3 +24,36 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .target {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 30px;
+
+    &__description {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(3, auto);
+      row-gap: 24px;
+      place-items: center start;
+      justify-content: start;
+      margin: 0;
+      padding: 77px 22px 50px 53px;
+      transform: translateY(-15%);
+    }
+
+    &__description-text {
+      display: grid;
+      width: 340px;
+      box-sizing: border-box;
+      font-family: $primary-font;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      border: none;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}
