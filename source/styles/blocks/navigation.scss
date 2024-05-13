@@ -1,23 +1,26 @@
 .navigation {
-  z-index: 1;
   width: 100%;
   box-sizing: border-box;
   height: auto;
   position: relative;
-
-  &__list--hidden {
-    display: none;
-  }
+  grid-column: 1/3;
+  grid-row: 1/2;
 
   &__list {
-    position: absolute;
+    display: flex;
     flex-direction: column;
+    position: absolute;
     box-sizing: border-box;
     min-width: 320px;
     margin: 0;
     padding: 0;
-    top: 0;
-    left: 0;
+    top: 31px;
+    left: -20px;
+    z-index: 5;
+  }
+
+  &__list--hidden {
+    display: none;
   }
 
   &__list-item {
@@ -48,16 +51,19 @@
 @media (min-width: $tablet-width) {
   .navigation {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 2/3;
+    grid-row: 1/2;
     z-index: unset;
-
-    &__list--hidden {
-      display: block;
-    }
 
     &__list {
       display: grid;
+      position: static;
       grid-template-columns: repeat(3, auto);
       grid-template-rows: 1fr;
+      grid-column: 1/2;
+      grid-row: 1/2;
       justify-items: center;
       box-sizing: border-box;
       width: 100%;
@@ -83,19 +89,18 @@
   .navigation {
     display: grid;
 
-
     &__list {
       justify-content: center;
     }
 
     &__list-link {
-      color: $secondary-text-color;
+      color: #ff6347;// $secondary-text-color;
       white-space: nowrap;
       font-size: 20px;
       line-height: 1.6;
       padding-left: 16px;
       margin: 0;
-      z-index: 1;
+      z-index: 2;
     }
   }
 }

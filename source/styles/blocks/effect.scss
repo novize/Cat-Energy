@@ -3,23 +3,26 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 20px 49px;
+  row-gap: 4px;
+  padding: 0 20px 27px;
   background-color: #ffffff;
 
-  &__count {
+  &__wrapper {
     display: block;
     margin: 0;
     padding: 0;
+    list-style: none;
   }
+
 
   &__text {
     position: relative;
     color: $primary-text-color;
     font-family: $primary-font;
     font-size: 14px;
-    line-height: 1.29;
+    line-height: 1.3;
     padding: 0 0 0 80px;
-    margin: 20px 0 0;
+    margin: 20px 0 25px;
   }
 
   &__text::before,
@@ -37,28 +40,28 @@
     background-color: $accent-color;
   }
 
-  &__count:nth-child(2) .effect__text::after {
+  &__count:first-child .effect__text::after {
     width: 25px;
     height: 28px;
     transform: translate(70%, -55%);
     background-image: url("../../icons/stack.svg#leaf-icon");
   }
 
-  &__count:nth-child(3) .effect__text::after {
+  &__count:nth-child(2) .effect__text::after {
     width: 26px;
     height: 29px;
     transform: translate(66%, -50%);
     background-image: url("../../icons/stack.svg#liquid-icon");
   }
 
-  &__count:nth-child(4) .effect__text::after {
+  &__count:nth-child(3) .effect__text::after {
     width: 26px;
     height: 30px;
     transform: translate(66%, -50%);
     background-image: url("../../icons/stack.svg#eat-icon");
   }
 
-  &__count:nth-child(5) .effect__text::after {
+  &__count:nth-child(4) .effect__text::after {
     width: 27px;
     height: 31px;
     transform: translate(66%, -50%);
@@ -69,17 +72,25 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: 0;
-    padding: 5px 30px 0;
-    transform: translateY(-8%);
-    counter-reset: effect 0;
+    padding: 5px 30px 62px;
+
+    &__wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      position: relative;
+      counter-reset: number 0;
+    }
 
     &__count {
-      display: flex;
+      display: block;
       position: relative;
+      margin: 0;
+      padding: 0;
     }
 
     &__count::before {
@@ -87,8 +98,8 @@
       font-size: 280px;
       line-height: 1;
       color: #f2f2f2;
-      counter-increment: effect;
-      content: counter(effect);
+      counter-increment: number;
+      content: counter(number);
       position: absolute;
       top: -20px;
       left: 115px;

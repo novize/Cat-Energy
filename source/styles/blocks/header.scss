@@ -1,18 +1,15 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 190px 25px;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 65px;
+  width: 280px;
+  max-width: 100%;
+  padding: 13px 0 10px;
   background-color: #ffffff;
   box-sizing: border-box;
-  width: 100%;
-
-  &__mobile-helper {
-    display: flex;
-    flex-wrap: nowrap;
-    place-content: center space-between;
-    box-sizing: border-box;
-    align-items: center;
-    padding: 13px 20px 10px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -25,11 +22,6 @@
     width: 100%;
     max-width: 100%;
     padding: 25px 30px 26px;
-
-    &__mobile-helper {
-      margin: 0;
-      padding: 0;
-    }
   }
 }
 
@@ -41,9 +33,28 @@
     column-gap: 541px;
     padding: 55px 110px;
 
-    &__mobile-helper {
-      margin: 0;
-      padding: 0;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 719px;
+      height: 694px;
+      max-height: 100%;
+    }
+
+    &::before {
+      background-image: url("../../images/background-images/index-background@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &::after {
+      background-color: $accent-color;
+      opacity: 0.85;
     }
   }
 }

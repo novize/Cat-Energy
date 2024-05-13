@@ -1,5 +1,7 @@
 .logo {
   display: block;
+  grid-column: 1/2;
+  grid-row: 1/2;
 
   &__logo-footer {
     width: 128px;
@@ -11,7 +13,8 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    display: block;
+    grid-column: 1/2;
+    grid-row: 1/2;
 
     &__logo-footer {
       width: 128px;
@@ -19,5 +22,12 @@
       padding: 3px 3px 0 0;
       margin: 0;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }

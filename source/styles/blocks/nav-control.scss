@@ -5,6 +5,8 @@
   border: none;
   padding: 0;
   background-color: #ffffff;
+  grid-column: 2/3;
+  grid-row: 1/2;
 
   &--open {
     margin: 0;
