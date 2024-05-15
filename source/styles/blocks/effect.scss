@@ -8,12 +8,14 @@
   background-color: #ffffff;
 
   &__wrapper {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-
 
   &__text {
     position: relative;
@@ -71,17 +73,10 @@
 
 @media (min-width: $tablet-width) {
   .effect {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0;
     padding: 5px 30px 62px;
 
     &__wrapper {
-      display: flex;
       flex-flow: row wrap;
-      justify-content: space-between;
       position: relative;
       counter-reset: number 0;
     }
@@ -106,8 +101,6 @@
     }
 
     &__text {
-      position: relative;
-      font-family: $primary-font;
       width: 250px;
       font-size: 16px;
       line-height: 1.5;
@@ -120,6 +113,38 @@
       width: 80px;
       height: 80px;
       top: 18%;
+    }
+
+    &__count:nth-child(2) .effect__text::after,
+    &__count:nth-child(3) .effect__text::after,
+    &__count:nth-child(4) .effect__text::after,
+    &__count:nth-child(5) .effect__text::after {
+      transform: translate(103%, -45%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    padding: 5px 110px 62px;
+
+    &__wrapper {
+      gap: 20px;
+    }
+
+    &__text {
+      position: relative;
+      color: $primary-text-color;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 100px 0 0;
+      margin: 20px 0 25px;
+    }
+
+    &__text::before,
+    &__text::after {
+      top: 0;
+      left: 0;
     }
 
     &__count:nth-child(2) .effect__text::after,

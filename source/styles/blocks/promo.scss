@@ -57,8 +57,6 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    position: relative;
-
     &::before,
     &::after {
       display: none;
@@ -69,7 +67,10 @@
       color: $third-text-color;
       text-align: left;
       padding: 0  0 22px 120px;
-      margin: 0 auto;
+    }
+
+    &__pictures {
+      z-index: 0;
     }
   }
 }
@@ -91,16 +92,15 @@
       padding: 41px 120px 0 189px;
       grid-column: 1/2;
       grid-row: 2/3;
-      transform: translate(0);
-      z-index: 1;
+      transform: none;
     }
 
     &__pictures {
       grid-column: 2/3;
       grid-row: 1/-1;
       margin: -30 0 0 -248px;
-      z-index: 2;
       padding: 0;
+      z-index: 0;
     }
   }
 }

@@ -14,9 +14,7 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    display: grid;
     grid-template-columns: 175px 1fr;
-    grid-template-rows: 1fr;
     justify-content: space-between;
     column-gap: 77px;
     width: 100%;
@@ -27,9 +25,7 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    display: grid;
     grid-template-columns: 202px 1fr;
-    grid-template-rows: 1fr;
     column-gap: 541px;
     padding: 55px 110px;
 

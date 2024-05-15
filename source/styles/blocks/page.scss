@@ -1,5 +1,7 @@
 .page {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
   padding: 0;
   margin: 0;
   background-color: #ffffff;
