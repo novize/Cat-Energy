@@ -15,42 +15,18 @@
 @media (min-width: $tablet-width) {
   .header {
     grid-template-columns: 175px 1fr;
-    justify-content: space-between;
+    justify-content: center;
+    width: max-content;
     column-gap: 77px;
-    width: 100%;
-    max-width: 100%;
     padding: 25px 30px 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header {
-    grid-template-columns: 202px 1fr;
-    column-gap: 541px;
+    grid-template-columns: 202px 518px;
     padding: 55px 110px;
-
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 719px;
-      height: 694px;
-      max-height: 100%;
-    }
-
-    &::before {
-      background-image: url("../../images/background-images/index-background@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    &::after {
-      background-color: $accent-color;
-      opacity: 0.85;
-    }
+    column-gap: 500px;
+    position: static;
   }
 }

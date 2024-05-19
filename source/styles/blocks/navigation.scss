@@ -69,9 +69,6 @@
     }
 
     &__list-item {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
       border: none;
     }
 
@@ -86,18 +83,29 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
+    margin-left: 24px;
+    box-sizing: border-box;
+
     &__list {
-      justify-content: center;
+      justify-content: space-around;
+      z-index: 1;
+      display: grid;
+      padding-right: 8px;
+      width: fit-content;
+    }
+
+    &__list-item {
+      background-color: inherit;
+      justify-content: space-around;
     }
 
     &__list-link {
-      color: #ff6347;// $secondary-text-color;
+      color: tomato;//$secondary-text-color;
       white-space: nowrap;
       font-size: 20px;
       line-height: 1.6;
-      padding-left: 16px;
+      padding: 15px 17px 14px 16px;
       margin: 0;
-      z-index: 2;
     }
   }
 }

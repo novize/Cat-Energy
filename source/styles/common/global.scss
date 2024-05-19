@@ -30,3 +30,13 @@
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+
+.body picture {
+  display: contents;
+}
+
+@media (min-width: $desktop-width) {
+  .body {
+    position: relative;
+  }
+}

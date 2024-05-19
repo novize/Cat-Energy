@@ -1,9 +1,20 @@
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
   padding: 0;
   box-sizing: border-box;
   background-color: #ffffff;
+
+  &__address-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
 
   &__contacts {
     display: flex;
@@ -12,6 +23,8 @@
     justify-content: space-between;
     padding: 26px 20px;
     margin: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   &__contacts-text {
@@ -39,6 +52,11 @@
     line-height: 1.43;
     margin: 0;
     padding: 0;
+  }
+
+  &__contacts-address span {
+    text-align: left;
+    padding-right: 28px;
   }
 
   &__map {
@@ -80,11 +98,12 @@
 
 @media (min-width: $tablet-width) {
   .footer {
+    padding-top: 34px;
+
     &__contacts {
       width: 100%;
       box-sizing: border-box;
-      padding: 24px 69px 0;
-      transform: translateY(-39%);
+      padding: 24px 69px 43px;
     }
 
     &__contacts-text {
@@ -97,10 +116,11 @@
       font-size: 16px;
       line-height: 1.25;
       text-align: right;
+      padding-top: 3px;
     }
 
-    &__contacts-address + span {
-      padding-top: 10px;
+    &__contacts-address span {
+      padding: 20px 0 0;
     }
 
     &__map {
@@ -115,7 +135,47 @@
       box-sizing: border-box;
       gap: 100px;
       margin: 0;
-      padding: 44px 30px;
+      padding: 42px 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-top: 55px;
+    position: relative;
+
+    &__contacts {
+      box-sizing: border-box;
+      z-index: 2;
+      background-color: #ffffff;
+      width: 565px;
+      height: 80px;
+      padding: 100px 79px;
+      position: absolute;
+      left: 110px;
+      top: 171px;
+    }
+
+    &__contacts-text {
+      padding: 0;
+    }
+
+    &__contacts-address {
+      display: block;
+      margin-top: -7px;
+      width: 157px;
+      text-align: left;
+    }
+
+    &__contacts-address span {
+      display: block;
+    }
+
+    &__social-wrapper {
+      align-items: flex-end;
+      justify-content: space-around;
+      padding: 42px 110px;
     }
   }
 }

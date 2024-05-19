@@ -1,7 +1,6 @@
 .example {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
@@ -90,20 +89,22 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 44px 0 0;
+    padding: 41px 0 0;
+    margin-top: -14px;
     background-color: #ffffff;
     border-top: 1px solid #e6e6e6;
 
     &__text {
       font-size: 16px;
       line-height: 1.5;
-      padding: 60px 30px;
+      padding: 58px 30px;
     }
 
     &__stats {
       flex-flow: row nowrap;
       align-items: flex-start;
-      padding: 0 30px 256px;
+      justify-content: space-between;
+      padding: 0 30px 255px;
       box-sizing: border-box;
     }
 
@@ -113,15 +114,17 @@
     }
 
     &__text--expenses {
-      font-size: 20px;
-      line-height: 1.55;
       text-align: right;
-      padding: 0;
+      padding: 4px 0 0 8px;
+      font-size: 20px;
+      line-height: 1.45;
+      width: 180px;
+      margin: 0;
     }
 
     &__stats-block {
       width: 160px;
-      margin-top: -5px;
+      margin-top: -3px;
     }
 
     &__stats-block:first-child .example__text--result {
@@ -129,16 +132,20 @@
     }
 
     &__text--count {
+      position: relative;
       font-size: 30px;
       line-height: 1.23;
-      height: 70px;
+      white-space: nowrap;
+      padding: 9px 0 8px;
     }
 
     &__text--result {
-      top: 63px;
+      position: absolute;
+      top: 59px;
       font-size: 14px;
       width: 140px;
       padding: 0;
+      z-index: 1;
       text-transform: lowercase;
       background-color: #ffffff;
     }
@@ -147,8 +154,90 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding: 0;
-    background-color: #ffffff;
-    border-top: 1px solid #e6e6e6;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(3, auto);
+    place-items: end start;
+    justify-content: center;
+    column-gap: 225px;
+    position: relative;
+    width: 100%;
+    padding: 0 110px;
+    border: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      height: 385px;
+      width: 100%;
+      background-color: #f2f2f2;
+    }
+
+    &__text {
+      width: 433px;
+      padding: 134px 1px 69px 0;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      z-index: 1;
+    }
+
+    &__stats {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      place-items: end start;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      z-index: 1;
+    }
+
+    &__stats-container {
+      justify-content: flex-start;
+      gap: 42px;
+    }
+
+    &__text--expenses {
+      text-align: left;
+      padding: 61px 0 0;
+      font-size: 20px;
+      line-height: 1;
+      margin: 0;
+    }
+
+    &__text--expenses span {
+      padding-left: 62px;
+    }
+
+    &__stats-block {
+      width: 160px;
+      margin: 0;
+    }
+
+    &__stats-block:first-child .example__text--result {
+      width: 115px;
+    }
+
+    &__text--count {
+      position: relative;
+      font-size: 30px;
+      line-height: 1.23;
+      white-space: nowrap;
+      padding: 9px 0 8px;
+    }
+
+    &__text--result {
+      position: absolute;
+      top: 59px;
+      font-size: 14px;
+      width: 140px;
+      padding: 0;
+      z-index: 1;
+      text-transform: lowercase;
+      background-color: #f2f2f2;
+    }
   }
 }

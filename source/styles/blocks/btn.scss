@@ -23,9 +23,11 @@
 .btn--catalog {
   position: relative;
   color: $third-text-color;
-  padding: 19px 0 21px;
+  padding: 19px 0 21px 21px;
+  width: max-content;
   text-align: left;
   background-color: #f2f2f2;
+  border-top: 1px solid #d9d9d9;
 
   &::after {
     position: absolute;
@@ -71,7 +73,7 @@
     padding: 13px 0;
     max-width: 244px;
     position: relative;
-    bottom: 584px;
+    bottom: 583px;
     left: -142px;
   }
 
@@ -81,11 +83,12 @@
     font-size: 20px;
     width: 340px;
     margin: 0;
-    padding: 13px 0 21px;
+    padding: 34px 0 20px;
+    border: none;
 
     &::after {
       top: 50%;
-      transform: translate(80%, -80%);
+      transform: translate(25px, 0);
     }
   }
 }
@@ -95,12 +98,17 @@
     position: relative;
     padding: 13px 0;
     grid-column: 1/2;
-    grid-row: 3/4;
-    bottom: 58px;
-    left: -48px;
+    grid-row: 2/3;
+    transform: translate(10px, 464px);
+    z-index: 0;
   }
 
   .btn--catalog {
-    padding: 9px 0 14px;
+    padding: 7px 0 14px;
+
+    &::after {
+      right: 203px;
+      top: 11px;
+    }
   }
 }
