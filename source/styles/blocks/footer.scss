@@ -103,7 +103,7 @@
     &__contacts {
       width: 100%;
       box-sizing: border-box;
-      padding: 24px 69px 43px;
+      padding: 25px 69px 60px;
     }
 
     &__contacts-text {
@@ -124,7 +124,7 @@
     }
 
     &__map {
-      padding-top: 19px;
+      padding-top: 0;
     }
 
     &__social-wrapper {
@@ -170,6 +170,10 @@
 
     &__contacts-address span {
       display: block;
+    }
+
+    &__map {
+      padding-bottom: 17px;
     }
 
     &__social-wrapper {
