@@ -31,3 +31,17 @@
     padding: 12px 0 12px 12px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 38px 0;
+
+    &__label {
+      box-sizing: border-box;
+      padding: 15px 0 16px;
+    }
+  }
+}

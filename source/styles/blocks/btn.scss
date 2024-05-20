@@ -113,6 +113,10 @@
     grid-row: 2/3;
     width: 100%;
   }
+
+  .btn--submit {
+    padding: 15px 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -133,4 +137,14 @@
       top: 11px;
     }
   }
+
+  .btn--cart {
+    margin: -34px 0 11px;
+    padding: 10px 54px;
+  }
+
+  .btn--more {
+    padding: 10px 40px;
+  }
 }
+

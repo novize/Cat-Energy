@@ -188,8 +188,51 @@
     }
   }
 }
-/*
-@media (min-width: $desktop-width) {
 
+@media (min-width: $desktop-width) {
+  .product {
+    display: grid;
+    position: relative;
+    width: 245px;
+    height: 511px;
+    padding: 40px 38px;
+    border: none;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      bottom: 10px;
+      left: 0;
+      width: 245px;
+      height: 430px;
+      background-color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &__image-link {
+      margin-bottom: -76px;
+    }
+
+    &__props {
+      bottom: 11px;
+    }
+
+    &__more-text {
+      margin: -40px 0 51px;
+    }
+  }
+
+  .product-more {
+    height: 426px;
+    width: 245px;
+    margin-top: 60px;
+    padding: 0 1px;
+    position: relative;
+
+    &::before {
+      display: none;
+    }
+  }
 }
-*/
+

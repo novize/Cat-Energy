@@ -18,3 +18,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-catalog {
+    &__product-wrapper {
+      padding: 0 110px;
+    }
+  }
+}

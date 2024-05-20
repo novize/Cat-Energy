@@ -78,6 +78,10 @@
       line-height: 1.33;
       padding: 15px 17px 14px 16px;
     }
+
+    &__list-link-catalog {
+      color: $third-text-color;
+    }
   }
 }
 
@@ -106,6 +110,10 @@
       line-height: 1.6;
       padding: 15px 17px 14px 16px;
       margin: 0;
+    }
+
+    &__list-link-catalog {
+      color: #111111;
     }
   }
 }
