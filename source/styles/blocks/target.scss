@@ -1,6 +1,8 @@
 .target {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+  box-sizing: border-box;
   gap: 20px;
   padding: 20px;
   background-color: #ffffff;
@@ -9,9 +11,12 @@
   &__description {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: relative;
     background-color: #f2f2f2;
-    padding: 0 20px;
+    min-width: 280px;
+    width: 100%;
+    max-width: 290px;
   }
 
   &__description-text {
@@ -19,8 +24,82 @@
     font-family: $primary-font;
     font-size: 14px;
     line-height: 1.29;
-    border-bottom: 1px solid #d9d9d9;
-    padding-bottom: 21px;
+    padding: 0 21px 21px 20px;
     margin: 0;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .target {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 29px;
+    padding: 0 30px;
+    margin-top: -55px;
+
+    &__description {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(3, auto);
+      row-gap: 24px;
+      place-items: center start;
+      box-sizing: border-box;
+      width: 708px;
+      max-width: 100%;
+      justify-content: start;
+      margin: 0;
+      padding: 46px 22px 42px 53px;
+    }
+
+    &__description-text {
+      display: grid;
+      width: 340px;
+      box-sizing: border-box;
+      font-family: $primary-font;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      border: none;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .target {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    gap: 80px;
+    padding: 121px 110px 31px;
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 570px;
+      gap: 25px;
+      position: relative;
+      padding: 77px 22px 47px 53px;
+      background-color: #f2f2f2;
+    }
+
+    &__description-text {
+      display: inline-block;
+      width: 100%;
+      font-family: $primary-font;
+      font-size: 16px;
+      line-height: 1.5;
+      border: none;
+      padding: 0 5px 0 0;
+      margin: 0;
+    }
   }
 }

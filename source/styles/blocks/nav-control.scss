@@ -5,6 +5,8 @@
   border: none;
   padding: 0;
   background-color: #ffffff;
+  grid-column: 2/3;
+  grid-row: 1/2;
 
   &--open {
     margin: 0;
@@ -59,5 +61,17 @@
 
   &--close::after {
     bottom: 6px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav-control {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-control {
+    display: none;
   }
 }

@@ -1,6 +1,13 @@
 .main-index {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0;
   width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .main-index {
+    position: static;
+  }
 }

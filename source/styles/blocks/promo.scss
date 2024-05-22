@@ -1,72 +1,166 @@
 .promo {
   display: flex;
   flex-direction: column;
+  position: relative;
   padding: 0;
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 302px;
+    background-image: url("../../images/background-images/index-background-mobile@1x.jpg"), linear-gradient(90deg, hsla(250, 4%, 32%, 1) 100%, hsla(191, 5%, 40%, 1) 100%);
+    background-position: center top, top center;
+    background-repeat: no-repeat, repeat-x;
+    background-size: 320px 302px, 100% 302px;
+  }
+
 
   &__helper {
-    display: grid;
-    grid-template-columns: repeat(5, 100%);
-    grid-template-rows: repeat(3, auto);
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    min-height: 302px;
     margin: 0;
     padding: 0;
-  }
-
-  &__helper div:first-child {
-    width: 100%;
-    background-image: url("../../images/background-images/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    grid-column: 1/2;
-    grid-row: 1/3;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__helper div:nth-child(2) {
     background-color: $accent-color;
     opacity: 0.85;
-    grid-column: 1/2;
-    grid-row: 1/3;
+    box-sizing: border-box;
   }
 
   &__slogan {
+    display: block;
     font-family: $secondary-font;
     width: 100%;
     font-size: 14px;
     line-height: 1;
-    padding: 0 0 164px;
+    padding: 0 0 155px;
     margin: 0 auto;
     color: $secondary-text-color;
     text-transform: uppercase;
     text-align: center;
-    grid-column: 1/2;
-    grid-row: 2/3;
     z-index: 1;
+    box-sizing: border-box;
   }
 
-  &__helper div:last-child {
+  &__pictures {
     width: 100%;
     box-sizing: border-box;
-    margin: -135px auto 5px;
-    padding: 0;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    z-index: 2;
+    margin-top: -135px;
+    z-index: 1;
   }
 
   &__image {
     display: block;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 4px;
   }
+}
 
-  &__button-helper {
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
+@media (min-width: $tablet-width) {
+  .promo {
+    align-items: center;
+    align-content: center;
+
+    &::before {
+      display: none;
+    }
+
+    &__helper {
+      background-color: #ffffff;
+      width: max-content;
+    }
+
+    &__slogan {
+      display: block;
+      font-size: 20px;
+      color: $third-text-color;
+      text-align: left;
+      padding-left: 28px;
+      box-sizing: border-box;
+    }
+
+    &__pictures {
+      z-index: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr 100px;
+    width: max-content;
+    position: static;
+    place-items: start stretch;
+    justify-content: space-between;
+    padding: 0 0 32px;
+
+    /*
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      min-width: 1041px;
+      left: 50%;
+      height: 694px;
+      max-height: 100%;
+    }
+
+    &::before {
+      background-image:
+        url("../../images/background-images/index-background@1x.jpeg"),
+        linear-gradient(90deg, hsla(250, 4%, 32%, 1) 100%, hsla(191, 5%, 40%, 1) 100%);
+      background-position: left 0 top 0, top left;
+      background-repeat: no-repeat, repeat-x;
+      background-size: 1041px 694px, auto 694px;
+    }
+
+    &::after {
+      background-color: $accent-color;
+      opacity: 0.85;
+    }
+    */
+
+    &__helper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 180px 100px;
+      align-content: center;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin: 0;
+      padding: 0 95px 0 0;
+    }
+
+    &__slogan {
+      display: block;
+      width: min-content;
+      height: 60px;
+      padding: 0;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      transform: none;
+      white-space: nowrap;
+      margin: 0;
+    }
+
+    &__pictures {
+      grid-column: 2/3;
+      grid-row: 1/3;
+      margin: 0;
+      padding: 0;
+      transform: translate(-141px, -30px);
+    }
   }
 }

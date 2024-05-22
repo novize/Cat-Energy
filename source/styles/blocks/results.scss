@@ -1,8 +1,10 @@
 .results {
   display: grid;
-  grid-template-columns: repeat(3, 280px);
+  grid-template-columns: 280px;
+  grid-template-rows: auto;
+  justify-content: center;
   width: 100%;
-  max-width: 280px;
+  min-width: 280px;
   height: 256px;
   background-color: #eaeaea;
   margin: 0;
@@ -40,5 +42,32 @@
     margin: 0;
     padding: 0;
     vertical-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .results {
+    place-items: center center;
+    align-content: center;
+    height: 462px;
+
+    &__before,
+    &__after {
+      transform: translateY(-20%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .results {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    width: 560px;
+    height: 512px;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    transform: translateY(95px);
   }
 }

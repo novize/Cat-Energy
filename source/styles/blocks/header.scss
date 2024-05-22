@@ -1,0 +1,32 @@
+.header {
+  display: grid;
+  grid-template-columns: 190px 25px;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 65px;
+  width: 280px;
+  max-width: 100%;
+  padding: 13px 0 10px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    grid-template-columns: 175px 1fr;
+    justify-content: center;
+    width: max-content;
+    column-gap: 77px;
+    padding: 25px 30px 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    grid-template-columns: 202px 518px;
+    padding: 55px 110px;
+    column-gap: 500px;
+    position: static;
+  }
+}

@@ -3,7 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
   padding: 34px 20px 40px;
+  overflow-x: hidden;
 
   &__helper {
     display: grid;
@@ -18,48 +21,49 @@
   }
 
   &__promo {
-    display: grid;
-    grid-template-columns: repeat(3, 100%);
-    grid-template-rows: 1fr;
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     background-image: url("../../images/background-images/catalog-background-mobile-cat@1x.jpg");
-    grid-area: 1 / 1 / 2 / 2;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin: 0;
     padding: 0;
-  }
 
-  &__promo div:first-child {
-    background-color: $accent-color;
-    opacity: 0.85;
-    grid-area: 1 / 1 / 2 / 2;
-  }
-
-  &__promo div:nth-child(2) {
-    width: 78px;
-    height: 81px;
-    grid-area: 1 / 1 / 2 / 2;
-    background-image: url("../../icons/stack.svg#promotion-icon");
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    padding: 59px 0 56px;
-    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $accent-color;
+      opacity: 0.85;
+    }
   }
 
   &__promo-slogan {
     color: $secondary-text-color;
     font-family: $primary-font;
+    position: relative;
     font-size: 16px;
     line-height: 1.25;
     text-align: center;
     padding: 187px 61px 43px 58px;
     margin: 0 auto;
-    grid-area: 1 / 1 / 2 / 2;
     width: 161px;
-    z-index: 2;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 58px;
+      width: 78px;
+      height: 81px;
+      transform: translateX(-50%);
+      background-image: url("../../icons/stack.svg#promotion-icon");
+    }
   }
 
   &__text {
@@ -71,5 +75,90 @@
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promotion {
+    padding: 0 30px 62px;
+
+    &__helper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      padding-top: 35px;
+    }
+
+    &__promo {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto;
+      height: 200px;
+      background-image: url("../../images/background-images/catalog-background-tablet-cat@1x.jpg");
+      background-size: contain;
+
+      &::before {
+        height: 200px;
+        min-width: 707px;
+        max-width: 100%;
+      }
+    }
+
+    &__promo-slogan {
+      padding: 70px 125px 69px 58px;
+      margin-left: auto;
+      text-align: left;
+      width: 161px;
+      grid-column: 2/3;
+      grid-row: 1/2;
+
+      &::before {
+        position: absolute;
+        left: 50%;
+        top: 56px;
+        width: 78px;
+        height: 81px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        transform: translateX(-587%);
+      }
+    }
+
+    &__text {
+      padding: 32px 43px 0;
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.33;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotion {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    justify-content: center;
+    width: 1440px;
+    max-width: 100%;
+    padding-bottom: 33px;
+
+    &__helper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      padding-top: 35px;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    &__promo {
+      display: none;
+    }
+
+    &__text {
+      padding: 32px 88px 7px;
+    }
   }
 }
