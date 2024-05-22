@@ -4,6 +4,7 @@
   font-family: $secondary-font;
   font-weight: $basic-font-weight;
   color: $primary-text-color;
+  width: fit-content;
   font-size: 36px;
   line-height: 1;
   text-align: left;
@@ -119,10 +120,12 @@
 }
 
 .title--additional {
+  position: relative;
   color: $third-text-color;
   font-size: 24px;
-  margin: 0 20px;
-  padding: 25px 0 35px;
+  margin: 0 auto;
+  padding: 25px 20px 35px;
+  justify-self: self-start;
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -135,26 +138,44 @@
 }
 
 .title--promotion {
+  position: relative;
   font-size: 24px;
   margin: 0;
   padding: 40px 0 32px;
   align-self: flex-start;
 }
-/*
+
+.title--additional::before,
 .title--additional::after,
+.title--promotion::before,
 .title--promotion::after {
-  background-color: $accent-color;
   content: "";
-  display: inline-block;
+  position: absolute;
+  width: 100vw;
+  background-color: #68b738;
+  top: 35px;
   height: 2px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-  left: 42px;
-  bottom: 5px;
-  margin-right: -50%;
+  z-index: 0;
 }
-*/
+
+.title--additional::before {
+  left: calc(100% + 20px);
+}
+
+.title--additional::after {
+  right: calc(100% + 20px);
+}
+
+.title--promotion::before {
+  top: 50px;
+  left: calc(100% + 40px);
+}
+
+.title--promotion::after {
+  top: 50px;
+  right: calc(100% + 40px);
+}
+
 .target__description:nth-child(3) .title--target-description::after {
   width: 67px;
   height: 50px;
@@ -287,6 +308,17 @@
     border: none;
   }
 
+  .title--additional::before {
+    left: calc(100% + 40px);
+    top: 77px;
+  }
+
+  .title--additional::after {
+    right: calc(100% + 40px);
+    top: 77px;
+  }
+
+
   .title--additional-list {
     font-size: 20px;
     padding: 0;
@@ -298,6 +330,16 @@
     font-size: 32px;
     margin: 0 40px;
     padding: 79px 0 35px;
+  }
+
+  .title--promotion::before {
+    top: 93px;
+    left: calc(100% + 40px);
+  }
+
+  .title--promotion::after {
+    top: 93px;
+    right: calc(100% + 40px);
   }
 }
 
@@ -391,5 +433,47 @@
   .title--more::before,
   .title--more::after {
     top: 76px;
+  }
+
+  .title--additional {
+    padding: 60px 0 79px;
+    font-size: 40px;
+    margin: 0 40px 0 0;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  .title--additional::before {
+    left: calc(100% + 40px);
+    top: 77px;
+  }
+
+  .title--additional::after {
+    right: calc(100% + 40px);
+    top: 77px;
+  }
+
+
+  .title--additional-list {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0 0 2px 2px;
+  }
+
+  .title--promotion {
+    font-size: 40px;
+    width: max-content;
+    margin: 0 40px;
+    padding: 44px 0 16px 40px;
+  }
+
+  .title--promotion::before {
+    top: 62px;
+    left: calc(100% + 40px);
+  }
+
+  .title--promotion::after {
+    top: 62px;
+    right: calc(100% - 1px);
   }
 }

@@ -146,5 +146,12 @@
   .btn--more {
     padding: 10px 40px;
   }
+
+  .btn--additional {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 10px 92px;
+    margin: 0;
+  }
 }
 

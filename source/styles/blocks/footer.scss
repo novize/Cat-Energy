@@ -154,7 +154,7 @@
       padding: 100px 79px;
       position: absolute;
       left: 110px;
-      top: 171px;
+      top: 150px;
     }
 
     &__contacts-text {
@@ -173,13 +173,13 @@
     }
 
     &__map {
-      padding-bottom: 17px;
+      padding-bottom: 0;
     }
 
     &__social-wrapper {
       align-items: flex-end;
       justify-content: space-around;
-      padding: 42px 110px;
+      padding: 39px 110px;
     }
   }
 }

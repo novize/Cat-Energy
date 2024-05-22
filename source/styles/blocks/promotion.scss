@@ -6,6 +6,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 34px 20px 40px;
+  overflow-x: hidden;
 
   &__helper {
     display: grid;
@@ -128,6 +129,36 @@
       margin: 0;
       font-size: 24px;
       line-height: 1.33;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotion {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    justify-content: center;
+    width: 1440px;
+    max-width: 100%;
+    padding-bottom: 33px;
+
+    &__helper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      padding-top: 35px;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    &__promo {
+      display: none;
+    }
+
+    &__text {
+      padding: 32px 88px 7px;
     }
   }
 }

@@ -1,7 +1,17 @@
 .additional {
   display: grid;
+  position: relative;
   grid-template-rows: repeat(2, auto);
+  box-sizing: border-box;
   padding: 0;
+  z-index: 0;
+  overflow-x: hidden;
+  width: 100%;
+  justify-items: center;
+
+  &__promo {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -10,5 +20,74 @@
     justify-items: center;
     padding: 0 30px 34px;
     box-sizing: border-box;
+
+    &__promo {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional {
+    width: 1440px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto 245px;
+    grid-template-rows: repeat(2, auto);
+    justify-items: start;
+    justify-content: center;
+    column-gap: 80px;
+    padding: 0 110px 34px;
+
+    &__promo {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      position: relative;
+      width: 245px;
+      height: 288px;
+      background-image: url("../../images/background-images/catalog-background-desktop-cat@1x.jpg");
+      background-size: contain;
+      grid-column: 2/3;
+      grid-row: 2/3;
+      margin: 0;
+      padding: 0;
+
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 288px;
+        min-width: 245px;
+        max-width: 100%;
+        background-color: $accent-color;
+        opacity: 0.85;
+      }
+    }
+
+    &__promo-slogan {
+      color: $secondary-text-color;
+      font-family: $primary-font;
+      position: relative;
+      font-size: 16px;
+      line-height: 1.25;
+      text-align: center;
+      padding: 185px 30px 37px 31px;
+      margin: 0 auto;
+      width: 161px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 56px;
+        width: 78px;
+        height: 81px;
+        transform: translateX(-50%);
+        background-image: url("../../icons/stack.svg#promotion-icon");
+      }
+    }
   }
 }
