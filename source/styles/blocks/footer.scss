@@ -142,7 +142,7 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding-top: 55px;
+    padding: 0;
     position: relative;
 
     &__contacts {
@@ -154,7 +154,7 @@
       padding: 100px 79px;
       position: absolute;
       left: 110px;
-      top: 150px;
+      top: 96px;
     }
 
     &__contacts-text {
@@ -179,7 +179,7 @@
     &__social-wrapper {
       align-items: flex-end;
       justify-content: space-around;
-      padding: 39px 110px;
+      padding: 41px 110px;
     }
   }
 }

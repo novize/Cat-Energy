@@ -79,8 +79,9 @@
       padding: 15px 17px 14px 16px;
     }
 
-    &__list-link-catalog {
-      color: $third-text-color;
+    &__list-link--current {
+      text-decoration: underline 2px #68b738;
+      text-underline-offset: 12px;
     }
   }
 }
@@ -104,7 +105,7 @@
     }
 
     &__list-link {
-      color: tomato;//$secondary-text-color;
+      color: #111111;
       white-space: nowrap;
       font-size: 20px;
       line-height: 1.6;
@@ -112,8 +113,18 @@
       margin: 0;
     }
 
-    &__list-link-catalog {
-      color: #111111;
+    &__list-index .navigation__list-link {
+      color: #ffffff;
+    }
+
+    &__list-link--current {
+      text-decoration: underline 2px #68b738;
+      text-underline-offset: 12px;
+    }
+
+    &__list-index .navigation__list-link--current {
+      text-decoration: underline 2px #ffffff;
+      text-underline-offset: 12px;
     }
   }
 }

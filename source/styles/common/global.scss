@@ -16,10 +16,10 @@
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
+  position: static;
 }
 
 .visually-hidden {
-  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -29,11 +29,40 @@
   clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
+  position: absolute;
 }
 
 
 @media (min-width: $desktop-width) {
   .body {
     position: relative;
+
+    &__index-page::before,
+    &__index-page::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 694px;
+    }
+
+    &__index-page::before {
+      background-image:
+        image-set(
+          url("../../images/background-images/index-background@1x.jpeg") type("image/jpeg") 1x,
+          url("../../images/background-images/index-background@2x.jpeg") type("image/jpeg") 2x,
+          url("../../images/background-images/index-background@1x.webp") type("image/webp") 1x,
+          url("../../images/background-images/index-background@2x.webp") type("image/webp") 1x),
+        linear-gradient(90deg, hsla(250, 4%, 32%, 1) 100%, hsla(191, 5%, 40%, 1) 100%);
+      background-position: left center, top left;
+      background-repeat: no-repeat, repeat-x;
+      background-size: 1041px 694px, auto 694px;
+    }
+
+    &__index-page::after {
+      background-color: $accent-color;
+      opacity: 0.85;
+    }
   }
 }

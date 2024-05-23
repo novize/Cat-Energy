@@ -21,6 +21,8 @@
 
 @media (min-width: $desktop-width) {
   .main-catalog {
+    padding: 0 0 55px;
+
     &__product-wrapper {
       padding: 0 110px;
     }
