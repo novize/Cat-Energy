@@ -1,9 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: 1px solid #ff0000;
+}
+
+a {
+  outline: none;
+}
+
 .body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
   font-family: $primary-font;
   font-weight: 400;
   font-size: 14px;

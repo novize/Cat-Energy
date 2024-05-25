@@ -49,6 +49,14 @@
     color: $third-text-color;
     text-decoration: none;
   }
+
+  &__list-link:hover {
+    opacity: 0.6;
+  }
+
+  &__list-link:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -115,11 +123,6 @@
 
     &__list-index .navigation__list-link {
       color: #ffffff;
-    }
-
-    &__list-link--current {
-      text-decoration: underline 2px #68b738;
-      text-underline-offset: 12px;
     }
 
     &__list-index .navigation__list-link--current {

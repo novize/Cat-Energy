@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
 
-
   &__label {
     box-sizing: border-box;
     margin: 0;
@@ -25,12 +24,29 @@
     line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
-    outline: none;
     border: 1px solid #cdcdcd;
+    outline: none;
     margin: 0;
     padding: 12px 0 12px 12px;
   }
+
+  &__mail:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &__mail:focus {
+    outline: 2px solid #444444;
+  }
+
+  &__mail-error {
+    outline: none;
+  }
+
+  &__mail-error:invalid {
+    outline: 2px solid #ff8282;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .form {

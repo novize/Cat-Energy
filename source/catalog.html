@@ -388,7 +388,7 @@
 
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <label class="form__label" for="mail-area">
-          <input class="form__mail" type="email" id="mail-area" name="for-mail" pattern="кuklachev@gmail\.com" value="кuklachev@gmail.com" required>
+          <input class="form__mail form__mail-error" type="email" id="mail-area" name="for-mail" pattern="кuklachev@gmail\.com" value="кuklachev@gmail.com" required>
         </label>
         <button class="btn btn--submit" type="submit">Подписаться</button>
       </form>
@@ -450,12 +450,12 @@
 
       <a class="social-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="social-academy__link-text">HTML Academy</p>
-        <img class="social-academy__link-logo" src="images/logo-images/academy-logo-icon.svg" width="27" height="34" alt="html academy icon">
+        <div class="social-academy__link-logo"><span class="visually-hidden">Логотип HTML Академии</span>
+        </div>
       </a>
 
     </div>
   </footer>
-  <script src="/source/scripts/mobile-menu-switch.js"></script>
 </body>
 
 </html>

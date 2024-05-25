@@ -14,7 +14,6 @@
 .title--promo {
   color: $secondary-text-color;
   text-align: center;
-  padding: 27px 35px 25px;
   margin: 0;
   z-index: 1;
 }
@@ -27,7 +26,6 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 30px 0 30px 40px;
 
   &::before,
   &::after {
