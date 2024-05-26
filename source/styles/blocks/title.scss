@@ -1,6 +1,5 @@
 .title {
   display: block;
-  box-sizing: border-box;
   font-family: $secondary-font;
   font-weight: $basic-font-weight;
   color: $primary-text-color;
@@ -14,6 +13,7 @@
 .title--promo {
   color: $secondary-text-color;
   text-align: center;
+  padding: 26px 0 26px 1px;
   margin: 0;
   z-index: 1;
 }
@@ -25,6 +25,7 @@
   line-height: 1.54;
   text-transform: uppercase;
   text-align: center;
+  padding: 29px 0 32px 92px;
   margin: 0;
 
   &::before,
@@ -38,7 +39,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    left: 20px;
+    left: 22px;
     transform: translateY(-50%);
     background-color: $accent-color;
   }
@@ -48,8 +49,8 @@
     height: 50px;
     background-image: url("../../icons/stack.svg#cat-sitting-icon");
     background-repeat: no-repeat;
-    left: 11px;
-    transform: translateY(-54%);
+    left: 13px;
+    transform: translateY(-57%);
   }
 }
 
@@ -57,7 +58,7 @@
   color: $third-text-color;
   line-height: 1.11;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .title--example {
@@ -184,7 +185,7 @@
 }
 
 .target__description:nth-child(2) .title--target-description {
-  padding-left: 10px;
+  padding-left: 91px;
 }
 
 @media (min-width: $tablet-width) {
@@ -218,7 +219,7 @@
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      transform: translateY(13px);
+      transform: translateY(11px);
       background-color: $accent-color;
     }
 
@@ -238,18 +239,19 @@
     background-image: url("../../icons/stack.svg#cat-walking-icon");
     background-repeat: no-repeat;
     transform: translateY(55px);
-    left: 362px;
+    left: 358px;
   }
 
   .target__description:nth-child(2) .title--target-description {
     padding-left: 0;
+    padding-bottom: 2px;
   }
 
   .title--effect {
     width: 500px;
     font-size: 60px;
     margin: 0;
-    padding: 38px 0 48px;
+    padding: 44px 0;
   }
 
   .title--example {

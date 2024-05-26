@@ -1,9 +1,8 @@
 .promo {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 0 0 20px;
   align-items: center;
-  box-sizing: border-box;
   width: 100%;
   position: relative;
 
@@ -38,7 +37,6 @@
     padding: 0;
     background-color: $accent-color;
     opacity: 0.85;
-    box-sizing: border-box;
   }
 
   &__slogan {
@@ -47,17 +45,17 @@
     width: 100%;
     font-size: 14px;
     line-height: 1;
+    padding-bottom: 165px;
     margin: 0 auto;
     color: $secondary-text-color;
     text-transform: uppercase;
     text-align: center;
     z-index: 1;
-    box-sizing: border-box;
   }
 
   &__pictures {
     width: 100%;
-    box-sizing: border-box;
+    margin-top: -134px;
     z-index: 1;
   }
 
@@ -72,6 +70,7 @@
   .promo {
     align-items: center;
     align-content: center;
+    padding-bottom: 3px;
 
     &::before {
       display: none;
@@ -88,7 +87,7 @@
       color: $third-text-color;
       text-align: left;
       padding-left: 28px;
-      box-sizing: border-box;
+      padding-bottom: 156px;
     }
 
     &__pictures {
