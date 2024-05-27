@@ -82,14 +82,14 @@
 
     &__list-link {
       white-space: nowrap;
+      padding: 14px 17px;
       font-size: 18px;
       line-height: 1.33;
-      padding: 15px 17px 14px 16px;
     }
 
     &__list-link--current {
       text-decoration: underline 2px #68b738;
-      text-underline-offset: 12px;
+      text-underline-offset: 10px;
     }
   }
 }

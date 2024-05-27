@@ -182,14 +182,15 @@
       position: absolute;
       content: "";
       bottom: 0;
-      height: 385px;
+      height: 461px;
       width: 100%;
       background-color: #f2f2f2;
     }
 
     &__text {
       width: 433px;
-      padding: 134px 1px 69px 0;
+      padding: 135px 1px 69px 0;
+      margin-left: -1px;
       grid-column: 1/2;
       grid-row: 2/3;
       z-index: 1;
@@ -210,12 +211,13 @@
 
     &__stats-container {
       justify-content: flex-start;
-      gap: 42px;
+      padding: 0;
+      gap: 43px;
     }
 
     &__text--expenses {
       text-align: left;
-      padding: 61px 0 0;
+      padding: 59px 0 0;
       font-size: 20px;
       line-height: 1;
       margin: 0;
@@ -227,11 +229,13 @@
 
     &__stats-block {
       width: 160px;
+      padding: 8px 0 10px;
       margin: 0;
     }
 
     &__stats-block:first-child .example__text--result {
       width: 115px;
+      left: 21px;
     }
 
     &__text--count {
@@ -245,6 +249,7 @@
     &__text--result {
       position: absolute;
       top: 59px;
+      left: 11px;
       font-size: 14px;
       width: 140px;
       padding: 0;

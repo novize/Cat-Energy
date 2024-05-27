@@ -1,13 +1,12 @@
 .additional {
+  z-index: 0;
+  grid-template-rows: repeat(2, auto);
+  padding: 0;
   display: grid;
   position: relative;
-  grid-template-rows: repeat(2, auto);
-  box-sizing: border-box;
-  padding: 0;
-  z-index: 0;
   overflow-x: hidden;
+  justify-items: stretch;
   width: 100%;
-  justify-items: center;
 
   &__promo {
     display: none;
@@ -19,7 +18,6 @@
     width: 100%;
     justify-items: center;
     padding: 0 30px 34px;
-    box-sizing: border-box;
 
     &__promo {
       display: none;
@@ -29,8 +27,7 @@
 
 @media (min-width: $desktop-width) {
   .additional {
-    width: 1440px;
-    max-width: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: auto 245px;
     grid-template-rows: repeat(2, auto);
@@ -79,9 +76,9 @@
       font-size: 16px;
       line-height: 1.25;
       text-align: center;
-      padding: 185px 30px 37px 31px;
+      padding: 185px 0 37px;
       margin: 0 auto;
-      width: 161px;
+      width: 190px;
 
       &::before {
         position: absolute;

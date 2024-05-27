@@ -40,28 +40,38 @@
 
   &::after {
     position: absolute;
+    display: block;
     content: "";
     width: 32px;
     height: 12px;
-    margin: 0;
-    padding: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-image: url("../../icons/stack.svg#icon-right-arrow");
     top: 50%;
-    transform: translate(50%, -65%);
+    //transform: translate(50%, -65%);
   }
 }
 
 .btn--catalog:hover {
   background-color: transparent;
+
+  &::after {
+    width: 48px;
+    transition: background-position 0.3s;
+  }
 }
 
 .btn--catalog:active {
   background-color: transparent;
   opacity: 0.3;
+
+  &::after {
+    width: 48px;
+  }
 }
 
 .btn--cart {
-  margin: -5px 0 24px;
+  margin: 0 0 24px;
   line-height: 1.25;
   grid-column: 1/-1;
 }
@@ -164,7 +174,7 @@
     padding: 13px 0;
     grid-column: 1/2;
     grid-row: 2/3;
-    transform: translate(10px, 464px);
+    transform: translate(143px, 465px);
     z-index: 0;
   }
 

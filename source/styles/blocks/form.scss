@@ -32,18 +32,18 @@
 
   &__mail:hover {
     outline: 1px solid #cdcdcd;
+    outline-offset: -2px;
   }
 
   &__mail:focus {
     outline: 2px solid #444444;
+    outline-offset: -2px;
   }
 
-  &__mail-error {
-    outline: none;
-  }
-
-  &__mail-error:invalid {
+  &__mail:focus:user-invalid {
     outline: 2px solid #ff8282;
+    background-color: #e5e5e5;
+    outline-offset: -2px;
   }
 }
 
@@ -64,6 +64,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 9px 314px 0;
+    padding: 7px 0 0;
+    width: 752px;
   }
 }

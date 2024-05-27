@@ -69,7 +69,7 @@
 
 .title--catalog {
   color: $third-text-color;
-  padding: 27px 41px 39px 20px;
+  padding: 27px 41px 40px 20px;
   margin: 0;
   width: 100%;
   text-align: center;
@@ -120,9 +120,10 @@
 
 .title--additional {
   position: relative;
+  text-align: left;
   color: $third-text-color;
   font-size: 24px;
-  margin: 0 auto;
+  margin: 0;
   padding: 25px 20px 35px;
   justify-self: self-start;
   border-bottom: 1px solid #cdcdcd;
@@ -134,14 +135,6 @@
   text-transform: uppercase;
   margin: 0;
   padding: 14px 0 10px;
-}
-
-.title--promotion {
-  position: relative;
-  font-size: 24px;
-  margin: 0;
-  padding: 40px 0 32px;
-  align-self: flex-start;
 }
 
 .title--additional::before,
@@ -163,6 +156,14 @@
 
 .title--additional::after {
   right: calc(100% + 20px);
+}
+
+.title--promotion {
+  position: relative;
+  font-size: 24px;
+  margin: 0;
+  padding: 40px 0 32px;
+  align-self: flex-start;
 }
 
 .title--promotion::before {
@@ -282,6 +283,7 @@
   }
 
   .title--more {
+    display: grid;
     font-size: 20px;
     width: 140px;
     padding: 82px 0 22px;
@@ -347,7 +349,7 @@
   .title--promo {
     grid-column: 1/2;
     grid-row: 1/2;
-    padding: 40px 0 0;
+    padding: 42px 0 0 1px;
     margin-bottom: 20px;
     z-index: 0;
   }
@@ -364,7 +366,7 @@
     &::before,
     &::after {
       content: " ";
-      top: 50%;
+      top: 0;
       left: 0;
       background-repeat: no-repeat;
     }
@@ -374,7 +376,7 @@
       height: 100px;
       border-radius: 50%;
       background-color: $accent-color;
-      transform: translateY(-72%);
+      transform: translateY(-28%);
     }
 
     &::after {
@@ -382,20 +384,20 @@
       height: 97px;
       background-image: url("../../icons/stack.svg#cat-sitting-icon");
       left: 15px;
-      transform: translateY(-80%);
+      transform: translateY(-35%);
     }
   }
 
   .target__description:nth-child(2) .title--target-description {
-    padding-left: 86px;
+    padding: 2px 0 48px 86px;
   }
 
   .target__description:nth-child(3) .title--target-description::after {
     width: 135px;
     height: 57px;
     background-image: url("../../icons/stack.svg#cat-walking-icon");
-    transform: translateY(-91%);
-    left: -19px;
+    transform: translateY(-15%);
+    left: -20px;
   }
 
   .title--effect {
@@ -463,17 +465,19 @@
   .title--promotion {
     font-size: 40px;
     width: max-content;
-    margin: 0 40px;
-    padding: 44px 0 16px 40px;
+    margin: 0;
+    padding: 27px 0 34px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
   }
 
   .title--promotion::before {
-    top: 62px;
+    top: 45px;
     left: calc(100% + 40px);
   }
 
   .title--promotion::after {
-    top: 62px;
-    right: calc(100% - 1px);
+    top: 45px;
+    right: calc(100% + 40px);
   }
 }
