@@ -94,7 +94,6 @@
     padding: 40px 20px;
     position: relative;
     width: 324px;
-    height: 511px;
     border: none;
     z-index: 0;
 
@@ -115,7 +114,7 @@
       grid-row: 1/2;
       width: 200px;
       height: 210px;
-      margin-bottom: -60px;
+      margin-bottom: -28px;
       padding: 0;
       justify-self: center;
       outline: none;
@@ -133,7 +132,7 @@
     &__title-link {
       display: grid;
       width: max-content;
-      padding: 10px 2px 0 0;
+      padding: 10px 2px 29px 0;
     }
 
     &__props {
@@ -142,7 +141,7 @@
       align-items: end;
       grid-template-rows: repeat(3, auto);
       position: relative;
-      bottom: 20px;
+      bottom: 19px;
     }
 
     &__props-items {
@@ -206,7 +205,6 @@
     display: grid;
     position: relative;
     width: 245px;
-    height: 511px;
     padding: 40px 22px;
     border: none;
 
