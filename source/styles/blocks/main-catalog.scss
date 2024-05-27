@@ -14,13 +14,15 @@
 @media (min-width: $tablet-width) {
   .main-catalog {
     &__product-wrapper {
-      padding: 0 30px;
+      padding: 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-catalog {
+    padding: 0 0 55px;
+
     &__product-wrapper {
       padding: 0 110px;
     }

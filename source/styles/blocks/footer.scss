@@ -4,7 +4,6 @@
   justify-content: center;
   width: 100%;
   padding: 0;
-  box-sizing: border-box;
   background-color: #ffffff;
 
   &__address-wrapper {
@@ -13,7 +12,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-sizing: border-box;
   }
 
   &__contacts {
@@ -24,7 +22,6 @@
     padding: 26px 20px;
     margin: 0;
     width: 100%;
-    box-sizing: border-box;
   }
 
   &__contacts-text {
@@ -71,7 +68,6 @@
     padding: 0;
     width: 100%;
     height: auto;
-    box-sizing: border-box;
     vertical-align: middle;
   }
 
@@ -92,7 +88,7 @@
     justify-content: center;
     background-color: #f2f2f2;
     margin: 0;
-    padding: 40px 20px;
+    padding: 38px 20px;
   }
 }
 
@@ -102,7 +98,6 @@
 
     &__contacts {
       width: 100%;
-      box-sizing: border-box;
       padding: 25px 69px 60px;
     }
 
@@ -132,7 +127,6 @@
       flex-flow: row nowrap;
       align-items: center;
       justify-content: space-between;
-      box-sizing: border-box;
       gap: 100px;
       margin: 0;
       padding: 42px 30px;
@@ -142,11 +136,10 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding-top: 55px;
+    padding: 0;
     position: relative;
 
     &__contacts {
-      box-sizing: border-box;
       z-index: 2;
       background-color: #ffffff;
       width: 565px;
@@ -154,7 +147,7 @@
       padding: 100px 79px;
       position: absolute;
       left: 110px;
-      top: 150px;
+      top: 96px;
     }
 
     &__contacts-text {
@@ -179,7 +172,7 @@
     &__social-wrapper {
       align-items: flex-end;
       justify-content: space-around;
-      padding: 39px 110px;
+      padding: 41px 110px;
     }
   }
 }

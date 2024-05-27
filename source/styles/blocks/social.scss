@@ -46,6 +46,19 @@
     height: 18px;
     mask-image: url("../../icons/stack.svg#icon-telegram");
   }
+
+  &__link--vk:hover,
+  &__link--youtube:hover,
+  &__link--telegram:hover {
+    background-color: #666666;
+  }
+
+  &__link--vk:active,
+  &__link--youtube:active,
+  &__link--telegram:active {
+    background-color: #666666;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

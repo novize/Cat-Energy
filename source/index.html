@@ -29,7 +29,7 @@
     </a>
 
     <!-- Навигация -->
-    <button class="nav-control nav-control--open" type="button">
+    <button class="nav-control nav-control--close" type="button">
       <span class="visually-hidden">
         <span aria-hidden="false">Открыть меню</span>
         <span aria-hidden="true">Закрыть меню</span>
@@ -37,7 +37,7 @@
     </button>
 
     <nav class="navigation">
-      <ul class="navigation__list navigation__list--hidden">
+      <ul class="navigation__list navigation__list-index navigation__list--hidden">
         <li class="navigation__list-item">
           <a class="navigation__list-link navigation__list-link--current" href="index.html">Главная</a>
         </li>
@@ -62,6 +62,10 @@
       </div>
       <div class="promo__pictures">
         <picture>
+          <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/products-images/cat-energy-promo-desctop@1x.webp 1x, images/products-images/cat-energy-promo-desctop@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/products-images/cat-energy-promo-tablet@1x.webp 1x, images/products-images/cat-energy-promo-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="images/products-images/cat-energy-promo-mobile@1x.webp 1x, images/products-images/cat-energy-promo-mobile@2x.webp 2x">
+
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/products-images/cat-energy-promo-desctop@1x.png 1x, images/products-images/cat-energy-promo-desctop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/products-images/cat-energy-promo-tablet@1x.png 1x, images/products-images/cat-energy-promo-tablet@2x.png 2x">
           <img class="promo__image" src="images/products-images/cat-energy-promo-mobile@1x.png" srcset="images/products-images/cat-energy-promo-mobile@2x.png 2x" width="280" height="270" alt="Промо товар">
@@ -136,6 +140,9 @@
 
         <div class="results__before">
           <picture>
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-effect-images/cat-before-tablet@1x.webp 1x, images/cat-effect-images/cat-before-tablet@1x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/cat-effect-images/cat-before-mobile@1x.webp 1x, images/cat-effect-images/cat-before-mobile@2x.webp 2x">
+
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-effect-images/cat-before-tablet@1x.png 1x, images/cat-effect-images/cat-before-tablet@2x.png 2x">
             <img class="results__image" src="images/cat-effect-images/cat-before-mobile@1x.png" srcset="images/cat-effect-images/cat-before-mobile@2x.png 2x" alt="Кот до" width="280" height="256">
           </picture>
@@ -143,6 +150,9 @@
 
         <div class="results__after">
           <picture>
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-effect-images/cat-after-tablet@1x.webp 1x, images/cat-effect-images/cat-after-tablet@1x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/cat-effect-images/cat-after-mobile@1x.webp 1x, images/cat-effect-images/cat-after-mobile@2x.webp 2x">
+
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-effect-images/cat-after-tablet@1x.png 1x, images/cat-effect-images/cat-after-tablet@2x.png 2x">
             <img class="results__image" src="images/cat-effect-images/cat-after-mobile@1x.png" srcset="images/cat-effect-images/cat-after-mobile@2x.png 2x" alt="Кот после" width="280" height="256">
           </picture>
@@ -171,12 +181,16 @@
       <div class="footer__map">
 
         <picture>
+          <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/map-images/map-desktop@1x.webp 1x, images/map-images/map-desktop@2x.webp 2x">
+          <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map-images/map-tablet@1x.webp 1x, images/map-images/map-tablet@2x.webp 2x">
+          <source width=" 320" height="362" type="image/webp" srcset="images/map-images/map-mobile@1x.webp 1x, images/map-images/map-mobile@2x.webp 2x">
+
           <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-images/map-desktop@1x.jpg 1x, images/map-images/map-desktop@2x.jpg 2x">
           <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-images/map-tablet@1x.jpg 1x, images/map-images/map-tablet@2x.jpg 2x">
           <img class="footer__map-image" src="images/map-images/map-mobile@1x.jpg" srcset="images/map-images/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="362">
         </picture>
 
-        <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor"></iframe>
+        <!-- <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor"></iframe> -->
 
       </div>
 
@@ -210,11 +224,14 @@
 
       <a class="social-academy" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="social-academy__link-text">HTML Academy</p>
-        <img class="social-academy__link-logo" src="images/logo-images/academy-logo-icon.svg" width="27" height="34" alt="html academy icon">
+        <div class="social-academy__link-logo"><span class="visually-hidden">Логотип HTML Академии</span>
+        </div>
       </a>
 
     </div>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

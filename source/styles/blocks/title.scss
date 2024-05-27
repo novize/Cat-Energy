@@ -1,6 +1,5 @@
 .title {
   display: block;
-  box-sizing: border-box;
   font-family: $secondary-font;
   font-weight: $basic-font-weight;
   color: $primary-text-color;
@@ -14,7 +13,7 @@
 .title--promo {
   color: $secondary-text-color;
   text-align: center;
-  padding: 27px 35px 25px;
+  padding: 26px 0 26px 1px;
   margin: 0;
   z-index: 1;
 }
@@ -26,8 +25,8 @@
   line-height: 1.54;
   text-transform: uppercase;
   text-align: center;
+  padding: 29px 0 32px 92px;
   margin: 0;
-  padding: 30px 0 30px 40px;
 
   &::before,
   &::after {
@@ -40,7 +39,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    left: 20px;
+    left: 22px;
     transform: translateY(-50%);
     background-color: $accent-color;
   }
@@ -50,8 +49,8 @@
     height: 50px;
     background-image: url("../../icons/stack.svg#cat-sitting-icon");
     background-repeat: no-repeat;
-    left: 11px;
-    transform: translateY(-54%);
+    left: 13px;
+    transform: translateY(-57%);
   }
 }
 
@@ -59,7 +58,7 @@
   color: $third-text-color;
   line-height: 1.11;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .title--example {
@@ -70,7 +69,7 @@
 
 .title--catalog {
   color: $third-text-color;
-  padding: 27px 41px 39px 20px;
+  padding: 27px 41px 40px 20px;
   margin: 0;
   width: 100%;
   text-align: center;
@@ -121,9 +120,10 @@
 
 .title--additional {
   position: relative;
+  text-align: left;
   color: $third-text-color;
   font-size: 24px;
-  margin: 0 auto;
+  margin: 0;
   padding: 25px 20px 35px;
   justify-self: self-start;
   border-bottom: 1px solid #cdcdcd;
@@ -135,14 +135,6 @@
   text-transform: uppercase;
   margin: 0;
   padding: 14px 0 10px;
-}
-
-.title--promotion {
-  position: relative;
-  font-size: 24px;
-  margin: 0;
-  padding: 40px 0 32px;
-  align-self: flex-start;
 }
 
 .title--additional::before,
@@ -166,6 +158,14 @@
   right: calc(100% + 20px);
 }
 
+.title--promotion {
+  position: relative;
+  font-size: 24px;
+  margin: 0;
+  padding: 40px 0 32px;
+  align-self: flex-start;
+}
+
 .title--promotion::before {
   top: 50px;
   left: calc(100% + 40px);
@@ -186,7 +186,7 @@
 }
 
 .target__description:nth-child(2) .title--target-description {
-  padding-left: 10px;
+  padding-left: 91px;
 }
 
 @media (min-width: $tablet-width) {
@@ -220,7 +220,7 @@
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      transform: translateY(13px);
+      transform: translateY(11px);
       background-color: $accent-color;
     }
 
@@ -240,18 +240,19 @@
     background-image: url("../../icons/stack.svg#cat-walking-icon");
     background-repeat: no-repeat;
     transform: translateY(55px);
-    left: 362px;
+    left: 358px;
   }
 
   .target__description:nth-child(2) .title--target-description {
     padding-left: 0;
+    padding-bottom: 2px;
   }
 
   .title--effect {
     width: 500px;
     font-size: 60px;
     margin: 0;
-    padding: 38px 0 48px;
+    padding: 44px 0;
   }
 
   .title--example {
@@ -282,6 +283,7 @@
   }
 
   .title--more {
+    display: grid;
     font-size: 20px;
     width: 140px;
     padding: 82px 0 22px;
@@ -347,7 +349,7 @@
   .title--promo {
     grid-column: 1/2;
     grid-row: 1/2;
-    padding: 40px 0 0;
+    padding: 42px 0 0 1px;
     margin-bottom: 20px;
     z-index: 0;
   }
@@ -364,7 +366,7 @@
     &::before,
     &::after {
       content: " ";
-      top: 50%;
+      top: 0;
       left: 0;
       background-repeat: no-repeat;
     }
@@ -374,7 +376,7 @@
       height: 100px;
       border-radius: 50%;
       background-color: $accent-color;
-      transform: translateY(-72%);
+      transform: translateY(-28%);
     }
 
     &::after {
@@ -382,20 +384,21 @@
       height: 97px;
       background-image: url("../../icons/stack.svg#cat-sitting-icon");
       left: 15px;
-      transform: translateY(-80%);
+      transform: translateY(-35%);
     }
   }
 
   .target__description:nth-child(2) .title--target-description {
-    padding-left: 86px;
+    padding: 2px 0 48px 161px;
+    text-align: left;
   }
 
   .target__description:nth-child(3) .title--target-description::after {
     width: 135px;
     height: 57px;
     background-image: url("../../icons/stack.svg#cat-walking-icon");
-    transform: translateY(-91%);
-    left: -19px;
+    transform: translateY(-15%);
+    left: -20px;
   }
 
   .title--effect {
@@ -463,17 +466,19 @@
   .title--promotion {
     font-size: 40px;
     width: max-content;
-    margin: 0 40px;
-    padding: 44px 0 16px 40px;
+    margin: 0;
+    padding: 27px 0 34px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
   }
 
   .title--promotion::before {
-    top: 62px;
+    top: 45px;
     left: calc(100% + 40px);
   }
 
   .title--promotion::after {
-    top: 62px;
-    right: calc(100% - 1px);
+    top: 45px;
+    right: calc(100% + 40px);
   }
 }

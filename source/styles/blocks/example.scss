@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-sizing: border-box;
   width: 100%;
+  padding: 27px 20px 40px;
+  margin: 0;
   background-color: #eaeaea;
-  padding: 25px 20px 40px;
 
   &__text {
     color: $primary-text-color;
@@ -31,13 +31,15 @@
     align-items: flex-start;
     justify-content: space-between;
     min-width: 280px;
+    width: 100%;
+    max-width: 350px;
     margin: 0;
     padding: 0;
   }
 
   &__stats-block {
     display: flex;
-    width: 122px;
+    width: 125px;
     position: relative;
     text-transform: uppercase;
     flex-direction: column;
@@ -67,9 +69,9 @@
     font-family: $primary-font;
     font-size: 12px;
     line-height: 1;
-    width: 59px;
+    width: 80px;
     margin: 0;
-    padding: 0 15px;
+    padding: 0 3px 0 0;
     text-transform: lowercase;
     text-align: center;
     background-color: #eaeaea;
@@ -89,7 +91,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 41px 0 0;
+    padding: 43px 0 0;
     margin-top: -14px;
     background-color: #ffffff;
     border-top: 1px solid #e6e6e6;
@@ -102,20 +104,19 @@
 
     &__stats {
       flex-flow: row nowrap;
-      align-items: flex-start;
       justify-content: space-between;
-      padding: 0 30px 255px;
+      padding: 0 30px 245px;
       box-sizing: border-box;
     }
 
     &__stats-container {
-      justify-content: flex-start;
-      gap: 43px;
+      max-width: 370px;
+      padding: 8px 3px;
     }
 
     &__text--expenses {
       text-align: right;
-      padding: 4px 0 0 8px;
+      padding: 0 2px 13px 0;
       font-size: 20px;
       line-height: 1.45;
       width: 180px;
@@ -124,24 +125,21 @@
 
     &__stats-block {
       width: 160px;
-      margin-top: -3px;
-    }
-
-    &__stats-block:first-child .example__text--result {
-      width: 115px;
+      margin-top: -11px;
     }
 
     &__text--count {
-      position: relative;
+      white-space: nowrap;
+      padding: 35px 0 38px;
       font-size: 30px;
       line-height: 1.23;
-      white-space: nowrap;
-      padding: 9px 0 8px;
+      position: relative;
     }
 
     &__text--result {
       position: absolute;
-      top: 59px;
+      top: 57px;
+      left: 8px;
       font-size: 14px;
       width: 140px;
       padding: 0;
@@ -149,8 +147,23 @@
       text-transform: lowercase;
       background-color: #ffffff;
     }
+
+    &__stats-block:first-child .example__text--result {
+      width: 115px;
+      left: 20px;
+    }
   }
 }
+
+@media (min-width: 860px) and (max-width: 1439px) {
+  .example {
+    &__stats {
+      justify-content: center;
+      gap: 75px;
+    }
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .example {
@@ -162,21 +175,22 @@
     column-gap: 225px;
     position: relative;
     width: 100%;
-    padding: 0 110px;
+    padding: 0 110px 75px;
     border: none;
 
     &::after {
       position: absolute;
       content: "";
       bottom: 0;
-      height: 385px;
+      height: 461px;
       width: 100%;
       background-color: #f2f2f2;
     }
 
     &__text {
       width: 433px;
-      padding: 134px 1px 69px 0;
+      padding: 135px 1px 69px 0;
+      margin-left: -1px;
       grid-column: 1/2;
       grid-row: 2/3;
       z-index: 1;
@@ -197,12 +211,13 @@
 
     &__stats-container {
       justify-content: flex-start;
-      gap: 42px;
+      padding: 0;
+      gap: 43px;
     }
 
     &__text--expenses {
       text-align: left;
-      padding: 61px 0 0;
+      padding: 59px 0 0;
       font-size: 20px;
       line-height: 1;
       margin: 0;
@@ -214,11 +229,13 @@
 
     &__stats-block {
       width: 160px;
+      padding: 8px 0 10px;
       margin: 0;
     }
 
     &__stats-block:first-child .example__text--result {
       width: 115px;
+      left: 21px;
     }
 
     &__text--count {
@@ -232,6 +249,7 @@
     &__text--result {
       position: absolute;
       top: 59px;
+      left: 11px;
       font-size: 14px;
       width: 140px;
       padding: 0;

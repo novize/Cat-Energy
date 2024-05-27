@@ -1,12 +1,10 @@
 .target {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  box-sizing: border-box;
-  gap: 20px;
-  padding: 20px;
   background-color: #ffffff;
-
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 20px calc(100vw - 100%);
+  padding: 0 20px 20px;
+  display: flex;
 
   &__description {
     display: flex;
@@ -14,19 +12,24 @@
     justify-content: space-between;
     position: relative;
     background-color: #f2f2f2;
-    min-width: 280px;
     width: 100%;
-    max-width: 290px;
+    max-width: 280px;
   }
 
   &__description-text {
-    display: inline-block;
-    font-family: $primary-font;
+    border-bottom: 1px solid #d9d9d9;
+    margin: -2px 0 0;
+    padding: 0 21px 22px;
+    font-family: "Lato", "arial", sans-serif;
     font-size: 14px;
     line-height: 1.29;
-    padding: 0 21px 21px 20px;
-    margin: 0;
-    border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 670px) and (max-width: 767px) {
+  .target {
+    justify-content: space-between;
   }
 }
 
@@ -35,9 +38,12 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 29px;
+    row-gap: 30px;
+    width: 100%;
     padding: 0 30px;
     margin-top: -55px;
+    justify-items: center;
+    justify-content: center;
 
     &__description {
       display: grid;
@@ -45,8 +51,7 @@
       grid-template-rows: repeat(3, auto);
       row-gap: 24px;
       place-items: center start;
-      box-sizing: border-box;
-      width: 708px;
+      min-width: 708px;
       max-width: 100%;
       justify-content: start;
       margin: 0;
@@ -56,7 +61,6 @@
     &__description-text {
       display: grid;
       width: 340px;
-      box-sizing: border-box;
       font-family: $primary-font;
       grid-column: 1 / 2;
       grid-row: 2 / 3;
@@ -72,23 +76,23 @@
   .target {
     display: flex;
     flex-flow: row nowrap;
+    align-items: stretch;
     justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
     gap: 80px;
-    padding: 121px 110px 31px;
+    margin: 0;
+    padding: 70px 110px 31px;
 
     &__description {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 570px;
-      gap: 25px;
-      position: relative;
-      padding: 77px 22px 47px 53px;
       background-color: #f2f2f2;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 25px;
+      width: 570px;
+      min-width: 570px;
+      padding: 77px 22px 47px 53px;
+      display: flex;
+      position: relative;
+      align-items: baseline;
     }
 
     &__description-text {
