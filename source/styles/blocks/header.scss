@@ -5,8 +5,7 @@
   align-items: center;
   justify-content: space-between;
   column-gap: 65px;
-  width: 280px;
-  max-width: 100%;
+  width: calc(100vw - 40px);
   background-color: #ffffff;
   padding: 13px 0 10px;
 }
