@@ -83,8 +83,13 @@
   .effect {
     justify-content: space-between;
 
+    &__wrapper {
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
     &__count {
-      width: calc(50vw - 30px);
+      width: calc(50vw - 40px);
     }
   }
 }
