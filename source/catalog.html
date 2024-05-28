@@ -15,7 +15,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="body body__catalog-page">
+<body class="body">
 
   <header class="header">
 
@@ -64,7 +64,7 @@
 
           <a class="product__image-link" href="#">
             <picture>
-              <source width="161" height="172" type="image/webp" media="(min-width: 1440px)" srcset="images/products-images/cat-energy-pro500-chicken-desktop@1x.webp 1x, images/products-images/cat-energy-pro500-chicken-desktop@2.webp 2x">
+              <source width="161" height="172" type="image/webp" media="(min-width: 1440px)" srcset="images/products-images/cat-energy-pro500-chicken-desktop@1x.webp 1x, images/products-images/cat-energy-pro500-chicken-desktop@2x.webp 2x">
               <source width="161" height="172" type="image/webp" media="(min-width: 768px)" srcset="images/products-images/cat-energy-pro500-chicken-tablet@1x.webp 1x, images/products-images/cat-energy-pro500-chicken-tablet@2x.webp 2x">
               <source width="68" height="86" type="image/webp" srcset="images/products-images/cat-energy-pro500-chicken-mobile@1x.webp 1x, images/products-images/cat-energy-pro500-chicken-mobile@2x.webp 2x">
 
@@ -361,8 +361,8 @@
         <li class="additional-list__items">
           <h3 class="title title--additional-list">Сахарозаменитель</h3>
           <ul class="additional-list__item">
-            <div class="additional-list__item-feature">1 упаковка (100&nbsp;г)</div>
-            <div class="additional-list__item-value">200&nbsp;₽</div>
+            <li class="additional-list__item-feature">1 упаковка (100&nbsp;г)</li>
+            <li class="additional-list__item-value">200&nbsp;₽</li>
           </ul>
           <a class="btn btn--additional" href="#">Заказать</a>
         </li>
@@ -370,8 +370,8 @@
         <li class="additional-list__items">
           <h3 class="title title--additional-list">Питьевая вода</h3>
           <ul class="additional-list__item">
-            <div class="additional-list__item-feature">5 литров</div>
-            <div class="additional-list__item-value">50&nbsp;₽</div>
+            <li class="additional-list__item-feature">5 литров</li>
+            <li class="additional-list__item-value">50&nbsp;₽</li>
           </ul>
           <a class="btn btn--additional" href="#">Заказать</a>
         </li>
@@ -379,8 +379,8 @@
         <li class="additional-list__items">
           <h3 class="title title--additional-list">Молоко</h3>
           <ul class="additional-list__item">
-            <div class="additional-list__item-feature">1 литр</div>
-            <div class="additional-list__item-value">100&nbsp;₽</div>
+            <li class="additional-list__item-feature">1 литр</li>
+            <li class="additional-list__item-value">100&nbsp;₽</li>
           </ul>
           <a class="btn btn--additional" href="#">Заказать</a>
         </li>
@@ -388,8 +388,8 @@
         <li class="additional-list__items">
           <h3 class="title title--additional-list">Витамины</h3>
           <ul class="additional-list__item">
-            <div class="additional-list__item-feature">1 упаковка (30&nbsp;г)</div>
-            <div class="additional-list__item-value">300&nbsp;₽</div>
+            <li class="additional-list__item-feature">1 упаковка (30&nbsp;г)</li>
+            <li class="additional-list__item-value">300&nbsp;₽</li>
           </ul>
           <a class="btn btn--additional" href="#">Заказать</a>
         </li>
@@ -416,6 +416,7 @@
 
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <label class="form__label" for="mail-area">
+          <span class="visually-hidden">Подписка на новости</span>
           <input class="form__mail" type="email" id="mail-area" name="for-mail" pattern="кuklachev@gmail\.com" placeholder="кuklachev@gmail.com" autocomplete="email" required>
         </label>
         <button class="btn btn--submit" type="submit">Подписаться</button>
@@ -484,8 +485,6 @@
 
     </div>
   </footer>
-  <script src="index.js"></script>
-
 </body>
 
 </html>

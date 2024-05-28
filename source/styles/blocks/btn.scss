@@ -21,7 +21,7 @@
 
 .btn:active {
   background-color: #5eaa2f;
-  opacity: 0.3;
+  color: hsla(0, 0%, 100%, 0.3);
 }
 
 .btn--choose-program {
@@ -76,7 +76,7 @@
   &::before {
     transition: all 0.3s;
     right: 5px;
-    width: 36px;
+    width: 28px;
   }
 }
 
@@ -98,16 +98,6 @@
   margin: 0 0 24px;
   line-height: 1.25;
   grid-column: 1/-1;
-}
-
-
-.btn--cart:hover {
-  background-color: #5eaa2f;
-}
-
-.btn--cart:active {
-  background-color: #5eaa2f;
-  opacity: 0.6;
 }
 
 .btn--more {
@@ -233,4 +223,3 @@
     margin: 0;
   }
 }
-
