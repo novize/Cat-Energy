@@ -12,19 +12,24 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    grid-template-columns: 175px 1fr;
-    justify-content: center;
-    width: max-content;
-    column-gap: 77px;
-    padding: 25px 30px 26px;
+    width: calc(100vw - 60px);
+    grid-template-columns: 175px 440px;
+    place-items: stretch stretch;
+    justify-content: space-between;
+    position: static;
+    padding: 25px 0 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header {
-    grid-template-columns: 202px 518px;
-    padding: 55px 110px;
-    column-gap: 500px;
+    width: calc(100vw - 220px);
+    max-width: 1920px;
+    grid-template-columns: 202px 580px;
+    place-items: stretch stretch;
+    justify-content: space-between;
+    padding: 55px 0;
     position: static;
+    column-gap: 0;
   }
 }

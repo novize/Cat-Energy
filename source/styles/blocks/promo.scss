@@ -45,7 +45,7 @@
     width: 100%;
     font-size: 14px;
     line-height: 1;
-    padding-bottom: 165px;
+    padding: 0 50px 165px;
     margin: 0 auto;
     color: $secondary-text-color;
     text-transform: uppercase;
@@ -87,6 +87,7 @@
       color: $third-text-color;
       text-align: left;
       padding-left: 28px;
+      width: 586px;
       padding-bottom: 156px;
     }
 
@@ -108,7 +109,6 @@
 
     &::before,
     &::after {
-      content: "";
       display: none;
     }
 
@@ -117,22 +117,23 @@
       grid-template-columns: 1fr;
       grid-template-rows: 180px 100px;
       align-content: center;
+      align-items: start;
       grid-column: 1/2;
       grid-row: 1/2;
       margin: 0;
       padding: 0 95px 0 0;
+      background-color: transparent;
+      z-index: 2;
     }
 
     &__slogan {
       display: block;
-      width: min-content;
-      height: 60px;
-      padding: 0;
+      padding: 21px 45px 0 85px;
       grid-column: 1/2;
       grid-row: 2/3;
       transform: none;
-      white-space: nowrap;
       margin: 0 0 -2px 2px;
+      z-index: 2;
     }
 
     &__pictures {
@@ -141,7 +142,8 @@
       margin: 0;
       padding: 0;
       z-index: 1;
-      transform: translate(-143px, -27px);
+      transform: translate(-230px, -28px);
     }
   }
 }
+

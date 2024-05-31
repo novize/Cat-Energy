@@ -80,10 +80,6 @@
       padding: 0;
     }
 
-    &__item-feature {
-      white-space: nowrap;
-    }
-
     &__item-value {
       text-align: right;
       padding-right: 2px;
@@ -136,7 +132,6 @@
     }
 
     &__item-feature {
-      white-space: nowrap;
       padding-left: 28px;
     }
   }

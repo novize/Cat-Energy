@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: baseline;
   gap: 29px;
@@ -64,7 +65,7 @@
 @media (min-width: $tablet-width) {
   .social {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     border: none;
     padding-left: 37px;

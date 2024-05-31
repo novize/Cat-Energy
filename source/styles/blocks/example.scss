@@ -49,16 +49,16 @@
 
   &__text--count {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
     order: -1;
     color: $third-text-color;
     font-family: $secondary-font;
     font-size: 24px;
     line-height: 1;
-    height: 56px;
-    padding: 0;
-    margin: -3px 0 0;
+    height: 53px;
+    padding: 12px 0 0;
+    margin: 0;
     border-radius: 3px;
   }
 
@@ -99,19 +99,19 @@
     &__text {
       font-size: 16px;
       line-height: 1.5;
-      padding: 58px 30px;
+      padding: 57px 30px 62px;
     }
 
     &__stats {
       flex-flow: row nowrap;
+      align-items: flex-start;
       justify-content: space-between;
-      padding: 0 30px 245px;
-      box-sizing: border-box;
+      padding: 0 30px 247px;
     }
 
     &__stats-container {
       max-width: 370px;
-      padding: 8px 3px;
+      padding: 0;
     }
 
     &__text--expenses {
@@ -124,21 +124,19 @@
     }
 
     &__stats-block {
-      width: 160px;
-      margin-top: -11px;
+      width: 161px;
+      margin: -7px 3px 0 0;
     }
 
     &__text--count {
-      white-space: nowrap;
-      padding: 35px 0 38px;
+      padding: 15px 0 55px;
       font-size: 30px;
       line-height: 1.23;
       position: relative;
     }
 
     &__text--result {
-      position: absolute;
-      top: 57px;
+      top: 58px;
       left: 8px;
       font-size: 14px;
       width: 140px;
@@ -175,6 +173,7 @@
     column-gap: 225px;
     position: relative;
     width: 100%;
+    max-width: 1920px;
     padding: 0 110px 75px;
     border: none;
 
@@ -182,6 +181,7 @@
       position: absolute;
       content: "";
       bottom: 0;
+      right: 0;
       height: 461px;
       width: 100%;
       background-color: #f2f2f2;
@@ -242,7 +242,6 @@
       position: relative;
       font-size: 30px;
       line-height: 1.23;
-      white-space: nowrap;
       padding: 9px 0 8px;
     }
 

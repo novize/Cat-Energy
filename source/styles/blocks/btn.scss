@@ -11,8 +11,6 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $accent-color;
-  box-sizing: border-box;
-  white-space: nowrap;
 }
 
 .btn:hover {
@@ -33,64 +31,43 @@
 .btn--catalog {
   position: relative;
   color: $third-text-color;
-  padding: 19px 0 21px 21px;
+  padding: 19px 42px 21px 21px;
   width: 161px;
   text-align: left;
   background-color: #f2f2f2;
 
-  &::before,
-  &::after {
-    position: absolute;
+  &::before {
     display: block;
+    position: absolute;
     content: "";
     top: 50%;
-  }
-
-  &::before {
-    width: 20px;
-    height: 2px;
-    background-color: #000000;
-    right: 20px;
-    top: 25px;
-  }
-
-  &::after {
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-left: 7px solid #000000;
-    border-bottom: 5px solid transparent;
-    right: 15px;
-    top: 21px;
+    right: 6px;
+    background-image: url("../../icons/stack.svg#icon-right-arrow");
+    background-position: -8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 12px;
+    transition: background-position 0.3s;
+    transform: translateY(-69%);
   }
 }
 
 .btn--catalog:hover {
   background-color: transparent;
 
-  &::after {
-    transition: all 0.3s;
-    right: 0;
-  }
-
   &::before {
-    transition: all 0.3s;
-    right: 5px;
-    width: 28px;
+    background-position: 0;
   }
 }
 
 .btn--catalog:active {
+  color: $third-text-color;
   background-color: transparent;
   opacity: 0.3;
 
-  &::after {
-    right: 0;
-  }
-
   &::before {
-    right: 5px;
-    width: 36px;
+    background-position: 0;
   }
 }
 
@@ -145,15 +122,11 @@
     font-size: 20px;
     width: 171px;
     margin: 0;
-    padding: 33px 0 20px;
+    padding: 33px 42px 20px 0;
     border: none;
 
     &::before {
-      top: 41px;
-    }
-
-    &::after {
-      top: 37px;
+      top: 60%;
     }
   }
 
@@ -187,23 +160,19 @@
 
 @media (min-width: $desktop-width) {
   .btn--choose-program {
-    position: relative;
+    position: static;
     padding: 13px 0;
+    margin: -115px 0 0 87px;
     grid-column: 1/2;
     grid-row: 2/3;
-    transform: translate(143px, 465px);
     z-index: 0;
   }
 
   .btn--catalog {
-    padding: 7px 0 14px;
+    padding: 7px 42px 14px 0;
 
     &::before {
-      top: 16px;
-    }
-
-    &::after {
-      top: 12px;
+      top: 47%;
     }
   }
 

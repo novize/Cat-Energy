@@ -59,6 +59,7 @@
     grid-column: 2/3;
     grid-row: 1/2;
     z-index: unset;
+    width: 440px;
 
     &__list {
       display: grid;
@@ -67,8 +68,9 @@
       grid-template-rows: 1fr;
       grid-column: 1/2;
       grid-row: 1/2;
+      gap: 20px;
       justify-items: center;
-      width: 100%;
+      width: 440px;
     }
 
     &__list-item {
@@ -77,33 +79,33 @@
 
     &__list-link {
       white-space: nowrap;
-      padding: 14px 17px;
+      padding: 15px 13px 15px 0;
       font-size: 18px;
       line-height: 1.33;
     }
 
     &__list-link--current {
       text-decoration: underline 2px #68b738;
-      text-underline-offset: 10px;
+      text-underline-offset: 12px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation {
-    margin-left: 24px;
+    width: 580px;
+    margin: 0;
+    padding: 0;
 
     &__list {
-      justify-content: space-around;
-      z-index: 1;
       display: grid;
-      padding-right: 8px;
-      width: fit-content;
+      grid-template-columns: repeat(3, max-content);
+      padding: 0 0 0 103px;
+      margin: 0;
     }
 
     &__list-item {
       background-color: inherit;
-      justify-content: space-around;
     }
 
     &__list-link {
@@ -111,7 +113,6 @@
       white-space: nowrap;
       font-size: 20px;
       line-height: 1.6;
-      padding: 15px 17px 14px 16px;
       margin: 0;
     }
 
