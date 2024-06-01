@@ -1,12 +1,13 @@
 .additional {
-  z-index: 0;
-  grid-template-rows: repeat(2, auto);
-  padding: 0;
   display: grid;
-  position: relative;
-  overflow-x: hidden;
-  justify-items: stretch;
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  align-content: stretch;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  overflow-x: hidden;
 
   &__promo {
     display: none;

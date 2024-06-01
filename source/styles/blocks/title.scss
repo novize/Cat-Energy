@@ -122,11 +122,12 @@
   position: relative;
   text-align: left;
   color: $third-text-color;
+  width: max-content;
+  max-width: 70vw;
   font-size: 24px;
   margin: 0;
   padding: 25px 20px 35px;
   justify-self: self-start;
-  border-bottom: 1px solid #cdcdcd;
 }
 
 .title--additional-list {
@@ -141,9 +142,10 @@
 .title--additional::after,
 .title--promotion::before,
 .title--promotion::after {
+  display: block;
   content: "";
   position: absolute;
-  width: 100vw;
+  width: calc(100vw);
   background-color: #68b738;
   top: 35px;
   height: 2px;
@@ -151,7 +153,7 @@
 }
 
 .title--additional::before {
-  left: calc(100% + 20px);
+  left: calc(100% + 0px);
 }
 
 .title--additional::after {
@@ -159,6 +161,8 @@
 }
 
 .title--promotion {
+  width: max-content;
+  max-width: 70vw;
   position: relative;
   font-size: 24px;
   margin: 0;
@@ -168,12 +172,12 @@
 
 .title--promotion::before {
   top: 50px;
-  left: calc(100% + 40px);
+  left: calc(100% + 20px);
 }
 
 .title--promotion::after {
   top: 50px;
-  right: calc(100% + 40px);
+  right: calc(100% + 20px);
 }
 
 .target__description:nth-child(3) .title--target-description::after {
@@ -279,6 +283,7 @@
     text-align: left;
     margin: 0 40px;
     width: max-content;
+    // max-width: calc(100vw - 168px);
     padding: 63px 0 80px;
     justify-self: start;
     border: none;
@@ -303,6 +308,8 @@
   }
 
   .title--promotion {
+    width: max-content;
+    //max-width: calc(100vw - 168px);
     font-size: 32px;
     margin: 0 40px;
     padding: 79px 0 35px;

@@ -2,9 +2,9 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  column-gap: 40px;
+  align-items: stretch;
   list-style: none;
+  column-gap: calc(100vw - 95%);
   padding: 0;
   margin: 0;
   width: 100%;
@@ -12,13 +12,16 @@
 
 @media (min-width: $tablet-width) {
   .products {
-    gap: 60px 64px;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-template-rows: auto;
-    align-items: stretch;
+    justify-content: space-between;
+    justify-items: center;
+    width: calc(100vw - 60px);
+    gap: clamp(60px, 6.7vw, 80px);
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .products {
