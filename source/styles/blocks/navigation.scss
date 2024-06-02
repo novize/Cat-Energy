@@ -23,6 +23,11 @@
     display: none;
   }
 
+  &__list--no-js {
+    position: static;
+    z-index: 0;
+  }
+
   &__list-item {
     display: flex;
     margin: 0;
@@ -52,6 +57,14 @@
   &__list-link:focus {
     opacity: 0.3;
   }
+}
+
+.navigation--no-js {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  grid-column: 1/1;
+  grid-row: 2/3;
 }
 
 @media (min-width: $tablet-width) {
@@ -100,8 +113,10 @@
     &__list {
       display: grid;
       grid-template-columns: repeat(3, max-content);
+      position: relative;
       padding: 0 0 0 103px;
       margin: 0;
+      z-index: 1;
     }
 
     &__list-item {

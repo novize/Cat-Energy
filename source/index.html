@@ -12,12 +12,15 @@
   <link rel="manifest" href="manifest.webmanifest">
 
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <link rel="preload" as="font" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="image" href="images/products-images/cat-energy-promo-desctop@1x.webp" media="(min-width: 1440px)" type="image/webp">
+  <link rel="preload" as="script" href="scripts/index.js" media="(max-width: 767px)" type="text/javascript">
 </head>
 
 <body class="body body--index-page">
 
-  <header class="header">
+  <header class="header header--no-js" data-test="header">
 
     <!-- Логотип сайта -->
     <a class="logo" href="index.html">
@@ -29,15 +32,15 @@
     </a>
 
     <!-- Навигация -->
-    <button class="nav-control nav-control--close" type="button">
+    <button class="nav-control nav-control--no-js nav-control--close" type="button">
       <span class="visually-hidden">
         <span aria-hidden="false">Открыть меню</span>
         <span aria-hidden="true">Закрыть меню</span>
       </span>
     </button>
 
-    <nav class="navigation">
-      <ul class="navigation__list navigation__list-index navigation__list--hidden">
+    <nav class="navigation navigation--no-js">
+      <ul class="navigation__list navigation__list--no-js navigation__list-index">
         <li class="navigation__list-item">
           <a class="navigation__list-link navigation__list-link--current" href="index.html">Главная</a>
         </li>
@@ -55,7 +58,7 @@
   <main class="main-index">
 
     <!-- Промо -->
-    <section class="promo">
+    <section class="promo" data-test="hero">
       <div class="promo__helper">
         <h1 class="title title--promo">Функциональное<br> питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
@@ -77,7 +80,7 @@
     </section>
 
     <!-- Цели -->
-    <section class="target">
+    <section class="target" data-test="programs">
       <h2 class="visually-hidden">Определение целевой программы для кошки</h2>
 
       <article class="target__description">
@@ -98,7 +101,7 @@
     </section>
 
     <!-- Достигнутый эффект -->
-    <section class="effect">
+    <section class="effect" data-test="features">
       <h2 class="title title--effect">Как это работает</h2>
       <ul class="effect__wrapper">
         <li class="effect__count">
@@ -117,7 +120,7 @@
     </section>
 
     <!-- Живой пример -->
-    <section class="example">
+    <section class="example" data-test="proof">
       <h2 class="title title--example">Живой пример</h2>
 
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
@@ -159,7 +162,6 @@
         </div>
 
         <div class="results__drag-bar">
-          <div class="results__drag-circle"></div>
         </div>
       </div>
 
@@ -170,7 +172,7 @@
     <h2 class="visually-hidden">Социальные сети и контакты</h2>
 
     <!-- Контакты -->
-    <div class="footer__address-wrapper">
+    <div class="footer__address-wrapper" data-test="contacts">
       <h3 class="visually-hidden">Контакты</h3>
 
       <div class="footer__contacts">
@@ -190,14 +192,14 @@
           <img class="footer__map-image" src="images/map-images/map-mobile@1x.jpg" srcset="images/map-images/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="362">
         </picture>
 
-        <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor"></iframe>
+        <iframe class="footer__map-iframe" title="Карта проезда к HTML Academy" src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor"></iframe>
 
       </div>
 
     </div>
 
     <!-- Социальные сети -->
-    <div class="footer__social-wrapper">
+    <div class="footer__social-wrapper" data-test="footer">
       <h3 class="visually-hidden">Социальные сети</h3>
 
       <a class="logo" href="index.html">
@@ -230,8 +232,7 @@
 
     </div>
   </footer>
-
-  <script src="source/scripts/index.js"></script>
+  <script src="scripts/index.js" defer="defer"></script>
 </body>
 
 </html>

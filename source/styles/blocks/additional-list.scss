@@ -63,9 +63,14 @@
     width: 100%;
     padding: 0 20px;
     justify-content: space-between;
+    border-top: 1px solid #cdcdcd;
 
     &__items {
       width: calc(50vw - 40px);
+    }
+
+    &__items:first-child {
+      border-top: none;
     }
   }
 }
@@ -116,11 +121,9 @@
 }
 
 
-@media (min-width: 769px) and (max-width: 1039px) {
+@media (min-width: 788px) and (max-width: 900px) {
   .additional-list {
-    min-width: 707px;
-    width: 100%;
-    max-width: 1039px;
+    width: calc(100% - clamp(23px, 2vw, 42px));
   }
 }
 

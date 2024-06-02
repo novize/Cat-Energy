@@ -12,12 +12,14 @@
   <link rel="manifest" href="manifest.webmanifest">
 
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <link rel="preload" as="font" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="script" href="scripts/index.js" media="(max-width: 767px)" type="text/javascript">
 </head>
 
 <body class="body">
 
-  <header class="header">
+  <header class="header header--no-js" data-test="header">
 
     <!-- Логотип сайта -->
     <a class="logo" href="index.html">
@@ -29,20 +31,20 @@
     </a>
 
     <!-- Навигация -->
-    <button class="nav-control nav-control--close" type="button">
+    <button class="nav-control nav-control--no-js nav-control--close" type="button">
       <span class="visually-hidden">
         <span aria-hidden="false">Открыть меню</span>
         <span aria-hidden="true">Закрыть меню</span>
       </span>
     </button>
 
-    <nav class="navigation">
-      <ul class="navigation__list navigation__list--hidden">
+    <nav class="navigation navigation--no-js">
+      <ul class="navigation__list navigation__list--no-js">
         <li class="navigation__list-item">
-          <a class="navigation__list-link" href="index.html">Главная</a>
+          <a class="navigation__list-link navigation__list-link--current" href="index.html">Главная</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__list-link navigation__list-link--current" href="catalog.html">Каталог продукции</a>
+          <a class="navigation__list-link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__list-item">
           <a class="navigation__list-link" href="#">Подбор программы</a>
@@ -52,7 +54,7 @@
 
   </header>
 
-  <main class="main-catalog">
+  <main class="main-catalog" data-test="catalog">
     <h1 class="title title--catalog">Каталог продукции</h1>
     <section class="main-catalog__product-wrapper">
 
@@ -352,7 +354,7 @@
     </section>
 
     <!-- Дополнительные товары -->
-    <section class="additional">
+    <section class="additional" data-test="additional">
 
       <h2 class="title title--additional">Дополнительные товары</h2>
 
@@ -429,7 +431,7 @@
     <h2 class="visually-hidden">Социальные сети и контакты</h2>
 
     <!-- Контакты -->
-    <div class="footer__address-wrapper">
+    <div class="footer__address-wrapper" data-test="contacts">
       <h3 class="visually-hidden">Контакты</h3>
 
       <div class="footer__contacts">
@@ -445,14 +447,14 @@
           <img class="footer__map-image" src="images/map-images/map-mobile@1x.jpg" srcset="images/map-images/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="362">
         </picture>
 
-        <!-- <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor"></iframe> -->
+        <iframe class="footer__map-iframe" title="Карта проезда к HTML Academy" src="https://yandex.ru/map-widget/v1/?um=constructor%3A49028048e632a28f992018be98333db174edac64d74613117fad716b3efa6853&amp;source=constructor"></iframe>
 
       </div>
 
     </div>
 
     <!-- Социальные сети -->
-    <div class="footer__social-wrapper">
+    <div class="footer__social-wrapper" data-test="footer">
       <h3 class="visually-hidden">Социальные сети</h3>
 
       <a class="logo" href="index.html">
@@ -485,6 +487,7 @@
 
     </div>
   </footer>
+  <script src="scripts/index.js" defer="defer"></script>
 </body>
 
 </html>

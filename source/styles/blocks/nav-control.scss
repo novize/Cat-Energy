@@ -62,6 +62,10 @@
   &--close::after {
     bottom: 6px;
   }
+
+  &--no-js {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

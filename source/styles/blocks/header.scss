@@ -10,6 +10,17 @@
   padding: 13px 0 10px;
 }
 
+.header--no-js {
+  width: 100vw;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  padding: 0;
+}
+
+.header--no-js .logo {
+  padding: 13px 40px 10px;
+}
+
 @media (min-width: $tablet-width) {
   .header {
     width: calc(100vw - 60px);

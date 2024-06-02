@@ -16,9 +16,9 @@
 
 @media (min-width: $tablet-width) {
   .additional {
-    width: 100%;
+    width: calc(100vw - 60px);
     justify-items: center;
-    padding: 0 30px 34px;
+    padding: 0 0 34px;
 
     &__promo {
       display: none;

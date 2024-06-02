@@ -87,6 +87,7 @@
     padding: 0 30px 62px;
 
     &__helper {
+      max-width: max-content;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, auto);
