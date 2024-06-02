@@ -114,9 +114,10 @@
       display: grid;
       grid-template-columns: repeat(3, max-content);
       position: relative;
-      padding: 0 0 0 103px;
+      padding: 0 0 0 123px;
       margin: 0;
       z-index: 1;
+      top: 0;
     }
 
     &__list-item {

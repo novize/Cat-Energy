@@ -30,12 +30,12 @@
   }
 }
 
-.social-academy > .social-academy__link-logo:hover {
+.social-academy:hover .social-academy__link-logo {
   background-color: #68b738;
   mask-image: url("../../icons/stack.svg#academy-logo-icon");
 }
 
-.social-academy > .social-academy__link-logo:active {
+.social-academy:active .social-academy__link-logo {
   background-color: #68b738;
   mask-image: url("../../icons/stack.svg#academy-logo-icon");
   opacity: 0.3;
