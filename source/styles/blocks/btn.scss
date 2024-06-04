@@ -111,6 +111,11 @@
   cursor: pointer;
 }
 
+.btn--submit:focus,
+.btn--submit:focus-visible {
+  outline: 2px solid #444444;
+}
+
 @media (min-width: 559px) and (max-width: 767px) {
   .btn--cart {
     width: calc(50vw - 30px);
@@ -186,9 +191,7 @@
   .btn--choose-program {
     position: static;
     padding: 13px 0;
-    margin: -115px 0 0 87px;
-    grid-column: 1/2;
-    grid-row: 2/3;
+    margin: 0 0 0 87px;
     z-index: 0;
   }
 

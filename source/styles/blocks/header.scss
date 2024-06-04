@@ -35,7 +35,7 @@
 @media (min-width: $desktop-width) {
   .header {
     width: calc(100vw - 220px);
-    max-width: 1920px;
+    max-width: 1440px;
     grid-template-columns: 202px 580px;
     place-items: stretch stretch;
     justify-content: space-between;

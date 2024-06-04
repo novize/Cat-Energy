@@ -123,7 +123,7 @@
   text-align: left;
   color: $third-text-color;
   width: max-content;
-  max-width: 70vw;
+  max-width: 83vw;
   font-size: 24px;
   margin: 0;
   padding: 25px 20px 35px;
@@ -145,7 +145,7 @@
   display: block;
   content: "";
   position: absolute;
-  width: calc(100vw);
+  width: 100vw;
   background-color: #68b738;
   top: 35px;
   height: 2px;
@@ -153,11 +153,11 @@
 }
 
 .title--additional::before {
-  left: calc(100% + 0px);
+  left: 100%;
 }
 
 .title--additional::after {
-  right: calc(100% + 20px);
+  right: 100%;
 }
 
 .title--promotion {
@@ -281,7 +281,7 @@
   .title--additional {
     font-size: 32px;
     text-align: left;
-    margin: 0 40px;
+    margin: 0 0 0 70px;
     width: max-content;
     padding: 63px 0 80px;
     justify-self: start;
@@ -297,7 +297,6 @@
     right: calc(100% + 40px);
     top: 77px;
   }
-
 
   .title--additional-list {
     font-size: 20px;
@@ -327,10 +326,8 @@
 @media (min-width: $desktop-width) {
   .title--promo {
     grid-column: 1/2;
-    grid-row: 1/2;
     padding: 40px 50px 0 86px;
-    margin-bottom: 20px;
-    z-index: 2;
+    margin-bottom: 0;
   }
 
   .title--target-description {
@@ -390,7 +387,7 @@
 
   .title--example {
     font-size: 60px;
-    padding: 74px 0 8px;
+    padding: 13px 0 8px;
     grid-column: 1/2;
     grid-row: 1/2;
   }
@@ -437,7 +434,6 @@
     right: calc(100% + 40px);
     top: 77px;
   }
-
 
   .title--additional-list {
     grid-column: 1/2;

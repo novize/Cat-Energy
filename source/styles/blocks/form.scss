@@ -7,46 +7,48 @@
   width: 100%;
   margin: 0;
   padding: 0;
-
-  &__label {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 24px 0 16px;
-    width: 100%;
-  }
-
-  &__mail {
-    box-sizing: border-box;
-    width: 100%;
-    color: $primary-text-color;
-    font-family: $secondary-font;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: left;
-    text-transform: uppercase;
-    border: 1px solid #cdcdcd;
-    outline: none;
-    margin: 0;
-    padding: 12px 0 12px 12px;
-  }
-
-  &__mail:hover {
-    outline: 1px solid #cdcdcd;
-    outline-offset: -2px;
-  }
-
-  &__mail:focus {
-    outline: 2px solid #444444;
-    outline-offset: -2px;
-  }
-
-  &__mail:focus:user-invalid {
-    outline: 2px solid #ff8282;
-    background-color: #e5e5e5;
-    outline-offset: -2px;
-  }
 }
 
+.form__label {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 24px 0 16px;
+  width: 100%;
+  outline: none;
+}
+
+.form__mail {
+  box-sizing: border-box;
+  width: 100%;
+  color: $primary-text-color;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  outline: none;
+  margin: 0;
+  padding: 12px 0 12px 12px;
+  background-color: #ffffff;
+}
+
+.form__mail:hover {
+  outline: 1px solid #cdcdcd;
+  outline-offset: -2px;
+}
+
+.form__mail:focus,
+.form__mail:focus-visible,
+.form__mail:visited {
+  outline: 2px solid #444444;
+  outline-offset: -2px;
+}
+
+.form__mail:focus:user-invalid {
+  outline: 2px solid #ff8282;
+  outline-offset: -2px;
+}
 
 @media (min-width: $tablet-width) {
   .form {
@@ -55,11 +57,11 @@
     align-items: center;
     padding: 9px 39px 0;
     max-width: 800px;
+  }
 
-    &__label {
-      box-sizing: border-box;
-      padding: 15px 0 16px;
-    }
+  .form__label {
+    box-sizing: border-box;
+    padding: 15px 0 16px;
   }
 }
 

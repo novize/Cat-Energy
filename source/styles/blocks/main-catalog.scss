@@ -4,27 +4,25 @@
   align-items: center;
   padding: 0;
   width: 100%;
+}
 
-  &__product-wrapper {
-    padding: 0;
-    margin: 0;
-  }
+.main-catalog__product-wrapper {
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .main-catalog {
-    &__product-wrapper {
-      padding: 0;
-    }
+  .main-catalog__product-wrapper {
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-catalog {
     padding: 0 0 55px;
+  }
 
-    &__product-wrapper {
-      padding: 0 110px;
-    }
+  .main-catalog__product-wrapper {
+    padding: 0 110px;
   }
 }
