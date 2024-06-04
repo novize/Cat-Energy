@@ -98,12 +98,14 @@
 
 @media (min-width: $desktop-width) {
   .promo {
+    grid-template-columns: 1440px;
+    justify-content: start;
+    max-width: 1440px;
+    margin: 0;
+    padding: 0 0 265px;
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    width: max-content;
-    place-items: start stretch;
-    justify-content: space-between;
-    padding: 0 0 32px;
+    position: relative;
+    place-items: start start;
 
     &::before,
     &::after {
@@ -112,31 +114,29 @@
   }
 
   .promo__helper {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: stretch;
-    align-items: center;
-    grid-column: 1/2;
-    margin: 0;
-    padding: 0 95px 0 0;
+    display: contents;
     background-color: transparent;
   }
 
   .promo__slogan {
+    margin: 0 0 0 190px;
+    padding: 40px 145px 0 0;
     display: block;
-    padding: 21px 45px 0 85px;
-    grid-column: 1/2;
     transform: none;
-    margin: 0 0 -2px 2px;
-    z-index: 2;
   }
 
   .promo__pictures {
-    grid-column: 2/3;
-    grid-row: 1/3;
+    z-index: 1;
     margin: 0;
     padding: 0;
-    z-index: 1;
-    transform: translate(-230px, -28px);
+    width: max-content;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 163px);
+  }
+
+  .promo__image {
+    margin: 0;
+    padding: 0;
   }
 }

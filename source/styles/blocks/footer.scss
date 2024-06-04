@@ -83,6 +83,10 @@
   border: none;
 }
 
+.footer__map-iframe--nojs {
+  display: none;
+}
+
 .footer__social-wrapper {
   display: flex;
   flex-direction: column;
@@ -183,8 +187,9 @@
   }
 
   .footer__social-wrapper {
-    align-items: flex-end;
-    justify-content: space-around;
-    padding: 41px 110px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 110px;
   }
 }
